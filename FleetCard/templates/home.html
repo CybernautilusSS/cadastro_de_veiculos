@@ -1,0 +1,122 @@
+```html
+{% extends 'base.html' %}
+
+{% block title %}
+    Home | FleetCard
+{% endblock %}
+
+
+{% block content %}
+
+<!-- ============================= -->
+<!-- HOME / APRESENTAÇÃO -->
+<!-- ============================= -->
+
+<section class="container py-5">
+
+    <div class="row align-items-center min-vh-100">
+
+        <!-- ============================= -->
+        <!-- TEXTO -->
+        <!-- ============================= -->
+
+        <div class="col-12 col-lg-6 text-center text-lg-start">
+
+            <span class="badge bg-primary mb-3">
+                Projeto Integrador
+            </span>
+
+            <h1 class="display-3 fw-bold">
+                FleetCard
+            </h1>
+
+            <h2 class="text-primary fw-bold">
+                Sistema de Gestão de Veículos
+            </h2>
+
+            <p class="lead text-secondary mt-3">
+                Sistema desenvolvido em Python e Django
+                para cadastro e gerenciamento de veículos.
+            </p>
+
+            <p class="text-secondary">
+                Organize as informações dos veículos de forma
+                simples, rápida e eficiente.
+            </p>
+
+            <a href="#" class="btn btn-primary btn-lg mt-3">
+
+                <i class="bi bi-car-front-fill"></i>
+
+                Começar
+
+            </a>
+
+        </div>
+
+
+        <!-- ============================= -->
+        <!-- ÍCONE -->
+        <!-- ============================= -->
+
+        <div class="col-12 col-lg-6 text-center mt-5 mt-lg-0">
+
+            <div class="p-4">
+
+                <i
+                    class="bi bi-car-front-fill text-primary"
+                    style="font-size: 180px;">
+                </i>
+
+                <h3 class="fw-bold mt-4">
+                    Controle sua frota
+                </h3>
+
+                <p class="text-secondary">
+                    Organização, controle e praticidade
+                    para o gerenciamento de veículos.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================= -->
+<!-- SOBRE O SISTEMA -->
+<!-- ============================= -->
+
+<section class="bg-light py-5">
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-12 col-md-10 col-lg-8 text-center">
+
+                <i class="bi bi-speedometer2 text-primary fs-1"></i>
+
+                <h2 class="fw-bold mt-3">
+                    FleetCard
+                </h2>
+
+                <p class="text-secondary lead">
+                    Uma solução desenvolvida para facilitar
+                    o cadastro e o gerenciamento de veículos
+                    dentro de uma frota.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
+
