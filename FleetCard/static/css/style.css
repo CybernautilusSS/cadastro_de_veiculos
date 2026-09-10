@@ -1,0 +1,42 @@
+:root {
+    --cor-fundo: #FBF1E0;
+    --cor-fundo-secao: #F4E6CC;
+    --cor-texto: #2E1B12;
+    --cor-texto-suave: #6B5544;
+
+    --fonte-corpo: Arial, sans-serif;
+    --fonte-display: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+
+    font-family: var(--fonte-corpo);
+    line-height: 1.55;
+
+    /* Textura sutil de papel/farinha */
+    background-image:
+        radial-gradient(
+            circle at 12% 8%,
+            rgba(151, 48, 39, 0.15),
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at 88% 92%,
+            rgba(190, 119, 13, 0.15),
+            transparent 45%
+        );
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--fonte-display);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+body {
+    background: var(--cor-fundo);
+}
