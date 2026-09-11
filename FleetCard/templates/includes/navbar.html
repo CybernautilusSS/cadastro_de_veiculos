@@ -1,44 +1,217 @@
+{% load static %}
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<!-- Navbar -->
 
-    <div class="container">
+<nav class="navbar navbar-dark bg-primary shadow py-0 border text-white">
 
-        <a class="navbar-brand fw-bold" href="/">
-            <i class="bi bi-car-front-fill"></i>
-            FleetCard
-        </a>
+    <div class="container-fluid px-1">
 
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarMenu"
-            aria-controls="navbarMenu"
-            aria-expanded="false"
-            aria-label="Abrir menu">
+        <!-- Menu -->
 
-            <span class="navbar-toggler-icon"></span>
+        <button id="menuFleetCard"
+            class="btn btn-primary h-100 rounded-0 d-flex flex-column justify-content-center align-items-center"
+            type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarFleetCard"
+            aria-controls="sidebarFleetCard">
+
+            <span id="menuTextoFleetCard" class="text-white fw-normal small">
+                MENU
+            </span>
+
+            <i id="menuIconFleetCard" class="bi bi-list fs-2 text-white">
+            </i>
 
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarMenu">
+        <!-- Logo -->
 
-            <ul class="navbar-nav ms-auto">
+        <a href="/" class="navbar-brand position-absolute top-50 start-50 translate-middle p-0 m-0">
 
-                <li class="nav-item">
+            <img src="{% static 'imagens/Logo_FleetCard_para_cadastro_de_veículos-removebg-preview.png' %}"
+                alt="FleetCard" class="img-fluid mt-4" style="max-height: 150px; width: auto;">
 
-                    <a class="nav-link active" href="/">
-                        <i class="bi bi-house-fill"></i>
-                        Home
-                    </a>
+        </a>
 
-                </li>
+        <!-- Home -->
 
-            </ul>
+        <a href="/" class="btn btn-white ms-auto text-white">
 
-        </div>
+            <i class="bi bi-house-fill me-1 text-white"></i>
+
+            Home
+
+        </a>
 
     </div>
 
 </nav>
 
+
+<!-- Sidebar -->
+
+<div class="offcanvas offcanvas-start bg-primary" tabindex="-1" id="sidebarFleetCard"
+    aria-labelledby="sidebarFleetCardLabel">
+
+
+    <!-- Cabeçalho -->
+
+    <div class="offcanvas-header bg-transparent text-white justify-content-center py-2" style="min-height: 85px;">
+
+        <button id="fecharSidebarFleetCard" type="button"
+            class="btn btn-primary text-white fw-normal d-flex align-items-center gap-2" data-bs-dismiss="offcanvas"
+            aria-label="Fechar">
+
+            <span>
+                FECHAR
+            </span>
+
+            <i class="bi bi-x-lg"></i>
+
+        </button>
+
+    </div>
+
+
+    <!-- Conteúdo -->
+
+    <div class="offcanvas-body p-0 bg-info">
+
+        <div class="list-group list-group-flush bg-info">
+
+
+            <!-- Home -->
+
+            <a href="{% url 'home' %}" class="list-group-item list-group-item-action py-3">
+
+                <i class="bi bi-house-fill text-primary me-3"></i>
+
+                Home
+
+            </a>
+
+
+            <!-- Veículos -->
+
+            <a href="#" class="list-group-item list-group-item-action py-3">
+
+                <i class="bi bi-car-front-fill text-primary me-3"></i>
+
+                Veículos
+
+            </a>
+
+
+            <!-- Cadastrar -->
+
+            <a href="#" class="list-group-item list-group-item-action py-3">
+
+                <i class="bi bi-plus-circle-fill text-primary me-3"></i>
+
+                Cadastrar veículo
+
+            </a>
+
+
+            <!-- Lista -->
+
+            <a href="#" class="list-group-item list-group-item-action py-3">
+
+                <i class="bi bi-card-list text-primary me-3"></i>
+
+                Lista de veículos
+
+            </a>
+
+
+            <!-- Editar -->
+
+            <a href="#" class="list-group-item list-group-item-action py-3">
+
+                <i class="bi bi-pencil-square text-primary me-3"></i>
+
+                Editar veículos
+
+            </a>
+
+
+            <!-- Excluir -->
+
+            <a href="#" class="list-group-item list-group-item-action py-3">
+
+                <i class="bi bi-trash-fill text-primary me-3"></i>
+
+                Excluir veículos
+
+            </a>
+
+
+            <!-- Motoristas -->
+
+            <a href="#" class="list-group-item list-group-item-action py-3">
+
+                <i class="bi bi-person-fill text-primary me-3"></i>
+
+                Motoristas
+
+            </a>
+
+
+            <!-- Relatórios -->
+
+            <a href="#" class="list-group-item list-group-item-action py-3">
+
+                <i class="bi bi-file-earmark-text-fill text-primary me-3"></i>
+
+                Relatórios
+
+            </a>
+
+
+            <!-- Configurações -->
+
+            <a href="#" class="list-group-item list-group-item-action py-3">
+
+                <i class="bi bi-gear-fill text-primary me-3"></i>
+
+                Configurações
+
+            </a>
+
+
+            <!-- Sobre -->
+
+            <a href="#" class="list-group-item list-group-item-action py-3">
+
+                <i class="bi bi-info-circle-fill text-primary me-3"></i>
+
+                Sobre o FleetCard
+
+            </a>
+
+
+        </div>
+
+
+        <!-- Rodapé -->
+
+        <div class="text-center w-100 p-4">
+
+            <a href="/" class="d-block text-decoration-none">
+
+                <img src="{% static 'imagens/Logo_FleetCard_para_cadastro_de_veículos-removebg-preview.png' %}"
+                    alt="FleetCard" class="img-fluid d-block mx-auto w-75 w-md-50">
+
+            </a>
+
+            <h5 class="text-primary fw-bold mb-0">
+                FleetCard
+            </h5>
+
+            <p class="text-primary small mb-0">
+                Sistema de cadastro e controle de veículos.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>

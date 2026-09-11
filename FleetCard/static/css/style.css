@@ -17,16 +17,12 @@ body {
 
     /* Textura sutil de papel/farinha */
     background-image:
-        radial-gradient(
-            circle at 12% 8%,
+        radial-gradient(circle at 12% 8%,
             rgba(151, 48, 39, 0.15),
-            transparent 40%
-        ),
-        radial-gradient(
-            circle at 88% 92%,
+            transparent 40%),
+        radial-gradient(circle at 88% 92%,
             rgba(190, 119, 13, 0.15),
-            transparent 45%
-        );
+            transparent 45%);
 }
 
 h1,
@@ -40,3 +36,23 @@ h3 {
 body {
     background: var(--cor-fundo);
 }
+
+
+
+/* Movimento da palavra e do X */
+#fecharSidebarFleetCard span,
+#fecharSidebarFleetCard i {
+    transition: transform 0.3s ease;
+}
+
+#fecharSidebarFleetCard:active span {
+    transform: translateX(-3px);
+}
+
+#fecharSidebarFleetCard:active i {
+    transform: rotate(90deg);
+}
+
+
+
+
