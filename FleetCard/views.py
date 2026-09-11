@@ -9,3 +9,6 @@ def sobre(request):
 
 def contatos(request):
     return render(request, 'contatos.html')
+
+def pagina_veiculos(request):
+    return render(request, 'pagina_veiculos.html')
