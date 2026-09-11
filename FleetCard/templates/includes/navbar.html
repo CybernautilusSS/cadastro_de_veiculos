@@ -13,9 +13,7 @@
             type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarFleetCard"
             aria-controls="sidebarFleetCard">
 
-            <span id="menuTextoFleetCard" class="text-white fw-normal small">
-                MENU
-            </span>
+           
 
             <i id="menuIconFleetCard" class="bi bi-list fs-2 text-white">
             </i>
@@ -54,7 +52,7 @@
 
     <!-- Cabeçalho -->
 
-    <div class="offcanvas-header bg-transparent text-white justify-content-center py-2" style="min-height: 85px;">
+    <div class="offcanvas-header bg-transparent text-white justify-content-start py-2" style="min-height: 85px;">
 
         <button id="fecharSidebarFleetCard" type="button"
             class="btn btn-primary text-white fw-normal d-flex align-items-center gap-2" data-bs-dismiss="offcanvas"
@@ -110,7 +108,7 @@
 
             </a>
 
-            <a href="#" class="list-group-item list-group-item-action py-3">
+            <a href="{% url 'contatos' %}" class="list-group-item list-group-item-action py-3">
 
                 <i class="bi bi-telephone-fill text-primary me-3"></i>
 
