@@ -38,5 +38,5 @@ h3 {
 }
 
 body {
-    background: red !important;
+    background: var(--cor-fundo);
 }
