@@ -1,42 +1,63 @@
-**# 🚗 FleetCard**
+# 🚗 DOCUMENTAÇÃO
 
-**## Sistema de Gestão e Cadastro de Veículos**
+# 🚘 Cadastro de Veículos
 
-**\*\*Projeto Integrador — Programador Back-End Python\*\***
+## 📚 Documentação técnica do projeto
 
-**\*\*Unidade Curricular:\*\*** Desenvolvimento Web com Django
+**🎓 CURSO:** Programação em Back-end Python
 
-**\*\*Tecnologias principais:\*\*** Python, Django, SQLite, Bootstrap 5 e Django Admin
+**📖 UNIDADE CURRICULAR:** Desenvolvimento Web com Django
 
-**---**
+**📅 TURMA:** 2026.2
 
-**## 📌 Sobre o Projeto**
+**📌 TEMA:** Projeto — Cadastro de Veículos
 
-O **\*\*FleetCard\*\*** é um sistema web desenvolvido em **\*\*Python e Django\*\*** com o objetivo de realizar o **\*\*cadastro, consulta e gerenciamento de veículos\*\***.
+**👥 GRUPO:** Grupo 4
+
+---
+
+# 👨‍💻 INTEGRANTES
+
+* Raphael Farias
+* Kayke Cansanção
+* Letícia
+* Fabiano
+
+---
+
+# 🔗 REPOSITÓRIO
+
+github.com/chavierwebmidia2026-glitch/cadastro_de_veiculos
+
+---
+
+# 🚗 FleetCard
+
+## 🏢 Sistema de Gestão e Cadastro de Veículos
+
+**🎓 Projeto Integrador — Programador Back-End Python**
+
+**📖 Unidade Curricular:** Desenvolvimento Web com Django
+
+**🛠️ Tecnologias principais:** Python, Django, SQLite, Bootstrap 5 e Django Admin
+
+---
+
+# 📖 Sobre o Projeto
+
+O FleetCard é um sistema web desenvolvido em Python e Django com o objetivo de realizar o cadastro, consulta e gerenciamento de veículos.
 
 O sistema foi planejado para trabalhar com veículos de diferentes categorias, permitindo o cadastro de:
 
-\* 🚗 Carros
-
-\* 🏍️ Motocicletas
-
-\* 🚚 Caminhões
-
-\* 🚐 Vans
-
-\* 🚌 Ônibus
-
-\* 🚜 Tratores
-
-\* 🚛 Utilitários
-
-\* ➕ Outros veículos
+* 🚗 Carros
+* 🏍️ Motocicletas
+* 🚚 Caminhões
 
 A aplicação será desenvolvida utilizando uma estrutura organizada, responsiva e preparada para receber novas funcionalidades relacionadas ao gerenciamento de frotas.
 
-**---**
+---
 
-**# 1. Situação de Aprendizagem**
+# 1. 📋 Situação de Aprendizagem
 
 O gerenciamento de veículos pode envolver uma grande quantidade de informações, como tipo, marca, modelo, placa, RENAVAM, ano, cor, combustível, quilometragem, situação e observações.
 
@@ -44,1784 +65,1080 @@ Quando essas informações são armazenadas de maneira manual ou desorganizada, 
 
 Diante dessa necessidade, foi proposto o desenvolvimento de uma aplicação web capaz de centralizar essas informações em um único sistema.
 
-O **\*\*FleetCard\*\*** será desenvolvido utilizando **\*\*Python, Django e SQLite\*\***, disponibilizando uma interface web responsiva construída com **\*\*Bootstrap 5\*\***.
+O FleetCard será desenvolvido utilizando Python, Django e SQLite, disponibilizando uma interface web responsiva construída com Bootstrap 5.
 
-A aplicação também utilizará o **\*\*Django Admin\*\*** para gerenciamento administrativo dos dados.
+A aplicação também utilizará o Django Admin para gerenciamento administrativo dos dados.
 
-**---**
+---
 
-**# 2. Desafio**
+# 2. 🎯 Desafio
 
-Desenvolver um sistema web denominado **\*\*FleetCard\*\***, permitindo realizar o **\*\*cadastro, consulta, atualização e exclusão de veículos\*\*** de forma organizada.
+Desenvolver um sistema web denominado FleetCard, permitindo realizar o cadastro, consulta, atualização e exclusão de veículos de forma organizada.
 
 A aplicação deverá trabalhar com diferentes tipos de veículos, não ficando limitada somente a automóveis.
 
 O sistema deverá possuir:
 
-\* Cadastro de veículos;
+* 📝 Cadastro de veículos;
+* 🔎 Consulta de veículos;
+* 📋 Listagem de veículos;
+* 👁️ Visualização dos detalhes;
+* ✏️ Edição;
+* 🗑️ Exclusão;
+* 🏷️ Classificação por tipo de veículo;
+* 📚 Cadastros complementares;
+* 📊 Relatórios;
+* 🔐 Django Admin;
+* 📱 Interface responsiva utilizando Bootstrap 5.
 
-\* Consulta de veículos;
+---
 
-\* Listagem de veículos;
-
-\* Visualização dos detalhes;
-
-\* Edição;
-
-\* Exclusão;
-
-\* Classificação por tipo de veículo;
-
-\* Cadastros complementares;
-
-\* Controle de manutenção;
-
-\* Controle de revisões;
-
-\* Controle de documentação;
-
-\* Relatórios;
-
-\* Django Admin;
-
-\* Interface responsiva utilizando Bootstrap 5.
-
-**---**
-
-**# 3. Competências Desenvolvidas**
+# 3. 🎓 Competências Desenvolvidas
 
 Ao concluir o projeto, o estudante deverá demonstrar que é capaz de:
 
-\* Configurar um projeto Django;
+* ⚙️ Configurar um projeto Django;
+* 🧩 Criar aplicações utilizando Django;
+* 🗄️ Modelar banco de dados utilizando ORM;
+* 💾 Utilizar SQLite como banco de dados;
+* 🔄 Desenvolver operações CRUD;
+* 🔐 Utilizar Django Admin;
+* 📄 Criar Templates reutilizáveis;
+* 🧬 Utilizar herança de Templates;
+* 🔗 Organizar URLs e Views;
+* 📝 Criar formulários;
+* ✅ Trabalhar com validação de dados;
+* 🎨 Utilizar Bootstrap para construção da interface;
+* 📱 Desenvolver uma interface responsiva;
+* 📁 Organizar arquivos estáticos;
+* 🌿 Trabalhar com Git e GitHub;
+* 🏗️ Desenvolver aplicações organizadas seguindo boas práticas.
 
-\* Criar aplicações utilizando Django;
+---
 
-\* Modelar banco de dados utilizando ORM;
-
-\* Utilizar SQLite como banco de dados;
-
-\* Desenvolver operações CRUD;
-
-\* Utilizar Django Admin;
-
-\* Criar Templates reutilizáveis;
-
-\* Utilizar herança de Templates;
-
-\* Organizar URLs e Views;
-
-\* Criar formulários;
-
-\* Trabalhar com validação de dados;
-
-\* Utilizar Bootstrap para construção da interface;
-
-\* Desenvolver uma interface responsiva;
-
-\* Organizar arquivos estáticos;
-
-\* Trabalhar com Git e GitHub;
-
-\* Desenvolver aplicações organizadas seguindo boas práticas.
-
-**---**
-
-**# 4. Recursos Disponíveis**
+# 4. 🛠️ Recursos Disponíveis
 
 Para o desenvolvimento do projeto serão utilizados:
 
-\* Python 3.x;
+* 🐍 Python 3.x;
+* 🌐 Django 6.x;
+* 💾 SQLite;
+* 💻 Visual Studio Code;
+* 🎨 Bootstrap 5;
+* 🔣 Bootstrap Icons;
+* 🌎 Navegador Web;
+* 🌿 Git;
+* 🐙 GitHub.
 
-\* Django 6.x;
+---
 
-\* SQLite;
-
-\* Visual Studio Code;
-
-\* Bootstrap 5;
-
-\* Bootstrap Icons;
-
-\* Navegador Web;
-
-\* Git;
-
-\* GitHub.
-
-**---**
-
-**# 5. Entregáveis**
+# 5. 📦 Entregáveis
 
 Ao final do desenvolvimento, o projeto deverá apresentar:
 
-\* Projeto Django funcionando;
+* ✅ Projeto Django funcionando;
+* 📁 Código-fonte organizado;
+* 💾 Banco de dados SQLite;
+* 📱 Interface funcional e responsiva;
+* 🧩 Template base reutilizável;
+* ☰ Menu lateral responsivo;
+* 🚗 Cadastro de veículos;
+* 🚘 Diferentes tipos de veículos;
+* 📋 Lista de veículos;
+* 📄 Página de detalhes;
+* ✏️ Edição de veículos;
+* 🗑️ Exclusão de veículos;
+* 🔐 Django Admin;
+* 📚 Cadastros complementares;
+* 🔧 Controle de manutenção;
+* 🔄 Controle de revisões;
+* 📑 Controle de documentação;
+* 📊 Relatórios.
 
-\* Código-fonte organizado;
-
-\* Banco de dados SQLite;
-
-\* Interface funcional e responsiva;
-
-\* Template base reutilizável;
-
-\* Menu lateral responsivo;
-
-\* Cadastro de veículos;
-
-\* Diferentes tipos de veículos;
-
-\* Lista de veículos;
-
-\* Página de detalhes;
-
-\* Edição de veículos;
-
-\* Exclusão de veículos;
-
-\* Django Admin;
-
-\* Cadastros complementares;
-
-\* Controle de manutenção;
-
-\* Controle de revisões;
-
-\* Controle de documentação;
-
-\* Relatórios.
-
-**### Quantidade de registros**
+## 🔢 Quantidade de registros
 
 Como adaptação ao projeto FleetCard, a etapa final poderá utilizar uma quantidade definida de veículos cadastrados para demonstração e validação do sistema.
 
-**---**
+---
 
-**# 6. Requisitos Funcionais**
+# 6. ⚙️ Requisitos Funcionais
 
-**## RF01 — Criar o projeto Django**
+## RF01 — 🚀 Criar o projeto Django
 
 Criar um projeto Django chamado:
 
-\`\`\`text
-
-FleetCard
-
-\`\`\`
+**FleetCard**
 
 O projeto deverá possuir a configuração necessária para execução da aplicação web.
 
-**---**
+---
 
-**## RF02 — Criar o aplicativo**
+## RF02 — 🧩 Criar o aplicativo
 
 Criar o aplicativo responsável pelas funcionalidades principais do sistema.
 
-Aplicação inicialmente utilizada:
+**Aplicação inicialmente utilizada:**
 
-\`\`\`text
-
-core
-
-\`\`\`
+**FleetCard**
 
 O aplicativo será responsável por organizar as funcionalidades, Views, URLs, Models, Templates e demais componentes necessários.
 
-**---**
+---
 
-**## RF03 — Criar o modelo Veículo**
+## RF03 — 🚘 Criar o modelo Veículo
 
-Criar o modelo **\*\*Veículo\*\*** utilizando o Django ORM.
+Criar o modelo Veículo utilizando o Django ORM.
 
 O modelo deverá armazenar as principais informações necessárias para identificar e controlar um veículo.
 
-**### Campos previstos**
+### 📝 Campos previstos
 
-\| Campo            | Tipo                        |
-
-\| ---------------- | --------------------------- |
-
-\| Tipo             | ChoiceField / CharField     |
-
-\| Marca            | CharField ou relacionamento |
-
-\| Modelo           | CharField                   |
-
-\| Placa            | CharField                   |
-
-\| RENAVAM          | CharField                   |
-
-\| Ano              | IntegerField                |
-
-\| Cor              | CharField ou relacionamento |
-
-\| Combustível      | ChoiceField / CharField     |
-
-\| Quilometragem    | IntegerField                |
-
-\| Status           | ChoiceField / CharField     |
-
-\| Observações      | TextField                   |
-
-\| Data de cadastro | DateTimeField               |
+| Campo            | Tipo                        |
+| ---------------- | --------------------------- |
+| Tipo             | ChoiceField / CharField     |
+| Marca            | CharField ou relacionamento |
+| Modelo           | CharField                   |
+| Placa            | CharField                   |
+| Ano              | IntegerField                |
+| Cor              | CharField ou relacionamento |
+| Combustível      | ChoiceField / CharField     |
+| Quilometragem    | IntegerField                |
+| Observações      | TextField                   |
+| Data de cadastro | DateTimeField               |
 
 A definição final dos campos poderá ser ajustada durante a implementação do modelo.
 
-**---**
+---
 
-**## RF04 — Registrar o modelo no Django Admin**
+## RF04 — 🔐 Registrar o modelo no Django Admin
 
-O modelo **\*\*Veículo\*\*** deverá ser registrado no Django Admin.
+O modelo Veículo deverá ser registrado no Django Admin.
 
 O painel administrativo deverá permitir:
 
-\* Visualizar veículos;
+* 👁️ Visualizar veículos;
+* ➕ Cadastrar veículos;
+* ✏️ Editar veículos;
+* 🗑️ Excluir veículos;
+* 🔎 Pesquisar informações.
 
-\* Cadastrar veículos;
+### 🔎 Pesquisas previstas
 
-\* Editar veículos;
+* Placa;
+* Modelo;
+* Marca.
 
-\* Excluir veículos;
+### 🔽 Filtros previstos
 
-\* Pesquisar informações;
+* Tipo de veículo;
+* Marca.
 
-\* Filtrar registros;
+---
 
-\* Organizar a apresentação dos dados.
-
-**### Pesquisas previstas**
-
-\* Placa;
-
-\* Modelo;
-
-\* Marca;
-
-\* RENAVAM.
-
-**### Filtros previstos**
-
-\* Tipo de veículo;
-
-\* Marca;
-
-\* Combustível;
-
-\* Status.
-
-**---**
-
-**## RF05 — Criar as páginas**
+## RF05 — 📄 Criar as páginas
 
 O sistema deverá possuir as seguintes páginas:
 
-\* Home / Dashboard;
-
-\* Lista de Veículos;
-
-\* Novo Veículo;
-
-\* Editar Veículo;
-
-\* Excluir Veículo;
-
-\* Detalhes do Veículo.
+* 🏠 Home / Dashboard;
+* 📋 Lista de Veículos;
+* ➕ Novo Veículo;
+* ✏️ Editar Veículo;
+* 🗑️ Excluir Veículo;
+* 👁️ Detalhes do Veículo;
+* 📞 Contatos;
+* ℹ️ Sobre.
 
 Também poderão ser criadas páginas específicas para as funcionalidades complementares.
 
-**---**
+---
 
-**## RF06 — Criar um Template Base**
+## RF06 — 🧱 Criar um Template Base
 
 Criar um Template Base para centralizar a estrutura comum da aplicação.
 
-Arquivo:
+**Arquivo:**
 
-\`\`\`text
-
+```text
 base.html
-
-\`\`\`
+```
 
 Todas as páginas principais deverão utilizar herança de Templates.
 
-Exemplo:
+**Exemplo:**
 
-\`\`\`django
-
+```html
 {% extends 'base.html' %}
-
-\`\`\`
+```
 
 O Template Base deverá conter:
 
-\* Estrutura HTML;
+* 🌐 Estrutura HTML;
+* 🎨 Bootstrap;
+* 🔣 Bootstrap Icons;
+* 🎨 CSS do projeto;
+* ☰ Sidebar;
+* 📄 Área de conteúdo;
+* 👣 Footer.
 
-\* Bootstrap;
+---
 
-\* Bootstrap Icons;
+## RF07 — ☰ Criar um menu de navegação
 
-\* CSS do projeto;
-
-\* Sidebar;
-
-\* Área de conteúdo;
-
-\* Footer;
-
-\* JavaScript do Bootstrap.
-
-**---**
-
-**## RF07 — Criar um menu de navegação**
-
-O sistema deverá possuir um **\*\*menu lateral (Sidebar)\*\*** utilizando o componente **\*\*Offcanvas do Bootstrap\*\***.
+O sistema deverá possuir um menu lateral (Sidebar) utilizando o componente Offcanvas do Bootstrap.
 
 O menu será acionado através de um botão de hambúrguer.
 
-**### Menu previsto**
+### 🗂️ Menu previsto
 
-\`\`\`text
-
+```text
 ☰ FleetCard
 
 INÍCIO
-
 └── Dashboard
 
 VEÍCULOS
-
 ├── Cadastrar veículo
-
 ├── Lista de veículos
-
 └── Consultar veículo
 
 TIPOS DE VEÍCULOS
-
 ├── Carros
-
 ├── Motocicletas
-
 ├── Caminhões
-
 ├── Vans e Utilitários
-
 ├── Ônibus
-
 └── Tratores e Máquinas
 
 CADASTROS
-
 ├── Marcas
-
 ├── Categorias
-
 ├── Combustíveis
-
 └── Cores
 
 CONTROLE
-
-├── Manutenção
-
-├── Revisões
-
 ├── Quilometragem
-
 └── Documentação
 
 RELATÓRIOS
-
-├── Relatório de veículos
-
-├── Relatório de manutenção
-
-└── Relatório de documentação
+└── Relatório de veículos
 
 SISTEMA
-
 ├── Configurações
-
 └── Administração
-
-\`\`\`
+```
 
 O menu deverá funcionar em:
 
-\* Computadores;
+* 💻 Computadores;
+* 💻 Notebooks;
+* 📱 Tablets;
+* 📱 Smartphones.
 
-\* Notebooks;
+---
 
-\* Tablets;
-
-\* Smartphones.
-
-**---**
-
-**## RF08 — Criar tela de listagem**
+## RF08 — 📋 Criar tela de listagem
 
 A tela de listagem deverá apresentar os principais dados dos veículos.
 
-**### Informações previstas**
+### 📊 Informações previstas
 
-\| Informação    | Descrição             |
+| Informação    | Descrição           |
+| ------------- | ------------------- |
+| Tipo          | Tipo do veículo     |
+| Marca         | Marca               |
+| Modelo        | Modelo              |
+| Placa         | Placa               |
+| Ano           | Ano                 |
+| Combustível   | Tipo de combustível |
+| Quilometragem | Quilometragem atual |
 
-\| ------------- | --------------------- |
+---
 
-\| Tipo          | Tipo do veículo       |
-
-\| Marca         | Marca                 |
-
-\| Modelo        | Modelo                |
-
-\| Placa         | Placa                 |
-
-\| Ano           | Ano                   |
-
-\| Combustível   | Tipo de combustível   |
-
-\| Quilometragem | Quilometragem atual   |
-
-\| Status        | Situação do veículo   |
-
-\| Ações         | Operações disponíveis |
-
-**---**
-
-**## RF09 — Criar ações**
+## RF09 — ⚡ Criar ações
 
 As ações disponíveis para cada veículo deverão permitir:
 
-\* 👁️ Visualizar;
-
-\* ✏️ Editar;
-
-\* 🗑️ Excluir.
+* 👁️ Visualizar;
+* ✏️ Editar;
+* 🗑️ Excluir.
 
 As ações deverão estar disponíveis na listagem dos veículos.
 
-**---**
+---
 
-**## RF10 — Criar página de detalhes**
+## RF10 — 📄 Criar página de detalhes
 
 A página de detalhes deverá apresentar todas as informações cadastradas do veículo.
 
-Exemplo:
+### 📌 Exemplo
 
-\`\`\`text
+* Tipo;
+* Marca;
+* Modelo;
+* Placa;
+* Ano;
+* Cor;
+* Combustível;
+* Quilometragem;
+* Observações;
+* Data de cadastro.
 
-Tipo
+---
 
-Marca
-
-Modelo
-
-Placa
-
-RENAVAM
-
-Ano
-
-Cor
-
-Combustível
-
-Quilometragem
-
-Status
-
-Observações
-
-Data de cadastro
-
-\`\`\`
-
-**---**
-
-**# 7. Tipos de Veículos**
+# 7. 🚗 Tipos de Veículos
 
 O FleetCard será desenvolvido para trabalhar com diferentes categorias de veículos.
 
-**## Tipos previstos**
+### Tipos previstos
 
-**### 🚗 Carro**
+#### 🚗 Carro
 
 Veículos de passeio e automóveis.
 
-**### 🏍️ Motocicleta**
+#### 🏍️ Motocicleta
 
 Motocicletas e veículos de duas rodas.
 
-**### 🚚 Caminhão**
+#### 🚚 Caminhão
 
 Veículos destinados principalmente ao transporte de cargas.
 
-**### 🚐 Van e Utilitário**
+---
 
-Veículos destinados ao transporte de pessoas, cargas ou utilização comercial.
-
-**### 🚌 Ônibus**
-
-Veículos destinados ao transporte coletivo de passageiros.
-
-**### 🚜 Trator e Máquina**
-
-Veículos e máquinas utilizados em atividades específicas.
-
-**### ➕ Outro**
-
-Permite representar outros tipos de veículos que não estejam nas categorias anteriores.
-
-**---**
-
-**# 8. Cadastro de Veículo**
+# 8. 📝 Cadastro de Veículo
 
 O cadastro será realizado através de um formulário único.
 
 O usuário deverá selecionar o tipo do veículo.
 
-Exemplo:
+### 📋 Exemplo
 
-\`\`\`text
-
+```text
 Tipo de veículo
-
 [ Carro ▼ ]
 
-Marca
+[ Adicionar imagem do veículo ]
 
-[ \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ ]
+Marca
+[ __________________ ]
 
 Modelo
-
-[ \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ ]
+[ __________________ ]
 
 Placa
-
-[ \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ ]
-
-RENAVAM
-
-[ \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ ]
+[ __________________ ]
 
 Ano
-
-[ \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ ]
+[ __________________ ]
 
 Cor
-
-[ \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ ]
+[ __________________ ]
 
 Combustível
-
-[ \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ ]
+[ __________________ ]
 
 Quilometragem
-
-[ \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ ]
-
-Status
-
-[ \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ ]
+[ __________________ ]
 
 Observações
-
-[ \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ ]
+[ __________________ ]
 
 [ Cadastrar Veículo ]
-
-\`\`\`
+```
 
 O mesmo formulário poderá ser utilizado para:
 
-\* Carro;
+* 🚗 Carro;
+* 🏍️ Moto;
+* 🚚 Caminhão.
 
-\* Moto;
+---
 
-\* Caminhão;
-
-\* Van;
-
-\* Ônibus;
-
-\* Trator;
-
-\* Utilitário;
-
-\* Outro.
-
-**---**
-
-**# 9. Operações CRUD**
+# 9. 🔄 Operações CRUD
 
 O sistema deverá implementar as operações fundamentais de um CRUD.
 
-**## Create — Criar**
+### ➕ Create — Criar
 
 Permitir cadastrar um novo veículo.
 
-**## Read — Ler**
+### 📖 Read — Ler
 
 Permitir listar e visualizar veículos cadastrados.
 
-**## Update — Atualizar**
+### ✏️ Update — Atualizar
 
 Permitir alterar os dados de um veículo.
 
-**## Delete — Excluir**
+### 🗑️ Delete — Excluir
 
 Permitir excluir um veículo cadastrado.
 
-**### Fluxo**
+### 🔄 Fluxo
 
-\`\`\`text
-
+```text
 CADASTRAR
-
-    ↓
-
+    ↓
 BANCO DE DADOS
-
-    ↓
-
+    ↓
 LISTAR
-
-    ↓
-
+    ↓
 VISUALIZAR
-
-    ↓
-
+    ↓
 EDITAR
-
-    ↓
-
+    ↓
 EXCLUIR
+```
 
-\`\`\`
+---
 
-**---**
-
-**# 10. Cadastros Complementares**
+# 10. 📚 Cadastros Complementares
 
 Além dos veículos, o sistema será preparado para possuir cadastros que complementem as informações da frota.
 
-**## 10.1 Marcas**
+## 10.1 🏷️ Marcas
 
 Permitir cadastrar e organizar as marcas dos veículos.
 
-Exemplos:
+### Exemplos:
 
-\* Fiat;
+* Fiat;
+* Volkswagen;
+* Chevrolet;
+* Toyota;
+* Honda;
+* Ford.
 
-\* Volkswagen;
+---
 
-\* Chevrolet;
-
-\* Toyota;
-
-\* Honda;
-
-\* Ford.
-
-**## 10.2 Categorias**
+## 10.2 🗂️ Categorias
 
 Permitir classificar os veículos conforme sua finalidade.
 
-Exemplos:
+### Exemplos:
 
-\* Passeio;
+* Passeio;
+* Carga;
+* Transporte;
+* Utilitário;
+* Comercial;
+* Motocicleta.
 
-\* Carga;
+---
 
-\* Transporte;
-
-\* Utilitário;
-
-\* Comercial;
-
-\* Motocicleta.
-
-**## 10.3 Combustíveis**
+## 10.3 ⛽ Combustíveis
 
 Tipos previstos:
 
-\* Gasolina;
+* Gasolina;
+* Etanol;
+* Diesel;
+* Flex;
+* Elétrico;
+* Híbrido.
 
-\* Etanol;
+---
 
-\* Diesel;
-
-\* Flex;
-
-\* Elétrico;
-
-\* Híbrido.
-
-**## 10.4 Cores**
+## 10.4 🎨 Cores
 
 Permitir organizar as cores utilizadas nos veículos.
 
-**---**
+---
 
-**# 11. Controle de Manutenção**
-
-Como evolução do sistema, o FleetCard deverá permitir registrar informações relacionadas à manutenção dos veículos.
-
-Exemplos:
-
-\* Data da manutenção;
-
-\* Tipo de manutenção;
-
-\* Descrição;
-
-\* Quilometragem;
-
-\* Valor;
-
-\* Observações.
-
-**---**
-
-**# 12. Controle de Revisões**
+# 11. 🔄 Controle de Revisões
 
 O sistema poderá registrar revisões realizadas e previstas.
 
-Informações previstas:
+### Informações previstas:
 
-\* Veículo;
+* Veículo;
+* Data;
+* Quilometragem;
+* Tipo de revisão;
+* Observações.
 
-\* Data;
+---
 
-\* Quilometragem;
-
-\* Tipo de revisão;
-
-\* Observações.
-
-**---**
-
-**# 13. Controle de Quilometragem**
+# 13. 🛣️ Controle de Quilometragem
 
 O sistema poderá manter informações relacionadas à quilometragem dos veículos.
 
 O objetivo é auxiliar no acompanhamento de:
 
-\* Revisões;
+* 🔄 Revisões;
+* 🔧 Manutenções;
+* 🚗 Uso do veículo;
+* 📚 Histórico.
 
-\* Manutenções;
+---
 
-\* Uso do veículo;
-
-\* Histórico.
-
-**---**
-
-**# 14. Controle de Documentação**
+# 14. 📑 Controle de Documentação
 
 O sistema poderá possuir uma área para acompanhamento da documentação dos veículos.
 
-Exemplos:
+### Exemplos:
 
-\* Documentação do veículo;
+* 📄 Documentação do veículo;
+* 📅 Data de vencimento;
+* 📌 Situação;
+* 📝 Observações.
 
-\* Data de vencimento;
+---
 
-\* Situação;
-
-\* Observações.
-
-**---**
-
-**# 15. Relatórios**
+# 15. 📊 Relatórios
 
 Como funcionalidade complementar, o FleetCard poderá disponibilizar relatórios.
 
-**### Relatórios previstos**
+### Relatórios previstos
 
-\* Relatório geral de veículos;
+* 📊 Relatório geral de veículos;
+* 🚘 Relatório por tipo;
+* 🏷️ Relatório por marca;
+* 🔧 Relatório de manutenção;
+* 🔄 Relatório de revisões;
+* 📑 Relatório de documentação.
 
-\* Relatório por tipo;
+---
 
-\* Relatório por marca;
-
-\* Relatório de manutenção;
-
-\* Relatório de revisões;
-
-\* Relatório de documentação.
-
-**---**
-
-**# 16. Requisitos Técnicos**
+# 16. ⚙️ Requisitos Técnicos
 
 O projeto deverá utilizar obrigatoriamente:
 
-\* **\*\*Django\*\***;
-
-\* **\*\*Django ORM\*\***;
-
-\* **\*\*SQLite\*\***;
-
-\* **\*\*Templates Django\*\***;
-
-\* **\*\*Bootstrap 5\*\***;
-
-\* **\*\*Bootstrap Icons\*\***;
-
-\* **\*\*Django Admin\*\***.
+* Django;
+* Django ORM;
+* SQLite;
+* Templates Django;
+* Bootstrap 5;
+* Bootstrap Icons;
+* Django Admin.
 
 Também serão utilizados:
 
-\* Python;
+* Python;
+* HTML5;
+* CSS3;
+* Git;
+* GitHub.
 
-\* HTML5;
+---
 
-\* CSS3;
+# 17. 📋 Regras de Negócio
 
-\* Git;
-
-\* GitHub.
-
-**---**
-
-**# 17. Regras de Negócio**
-
-**## RN01 — Tipo obrigatório**
+## RN01 — 🏷️ Tipo obrigatório
 
 Todo veículo deverá possuir um tipo definido.
 
-**---**
+---
 
-**## RN02 — Identificação obrigatória**
+## RN02 — 🆔 Identificação obrigatória
 
 O veículo deverá possuir informações suficientes para sua identificação.
 
-**---**
+---
 
-**## RN03 — Placa**
+## RN03 — 🔢 Placa
 
 A placa deverá ser utilizada como identificador do veículo e não deverá ser duplicada no sistema.
 
-**---**
+---
 
-**## RN04 — Quilometragem**
+## RN04 — 🛣️ Quilometragem
 
 A quilometragem não poderá possuir valor negativo.
 
-\`\`\`text
-
+```text
 Quilometragem >= 0
+```
 
-\`\`\`
+---
 
-**---**
-
-**## RN05 — Ano**
+## RN05 — 📅 Ano
 
 O ano deverá possuir um valor válido para o veículo cadastrado.
 
-**---**
+---
 
-**## RN06 — Campos obrigatórios**
+## RN06 — 📝 Campos obrigatórios
 
 Os campos definidos como obrigatórios deverão ser preenchidos antes do cadastro.
 
-**---**
+---
 
-**## RN07 — Status do veículo**
+## RN07 — 📌 Status do veículo
 
 Todo veículo deverá possuir uma situação/status definida.
 
-Exemplos:
+### Exemplos:
 
-\* Ativo;
+* 🟢 Ativo;
+* 🔧 Em manutenção;
+* ⚫ Inativo;
+* ✅ Disponível;
+* ❌ Indisponível.
 
-\* Em manutenção;
+---
 
-\* Inativo;
-
-\* Disponível;
-
-\* Indisponível.
-
-**---**
-
-**## RN08 — Cadastro único**
+## RN08 — 🆔 Cadastro único
 
 Cada veículo deverá possuir uma identificação própria dentro do sistema.
 
-**---**
+---
 
-**## RN09 — Exclusão**
+## RN09 — 🗑️ Exclusão
 
 A exclusão de um veículo deverá possuir confirmação para evitar remoções acidentais.
 
-**---**
+---
 
-**## RN10 — Integridade dos dados**
+## RN10 — 🔐 Integridade dos dados
 
 As informações deverão ser validadas antes de serem armazenadas no banco de dados.
 
-**---**
+---
 
-**# 18. Estrutura de Templates**
+# 18. 📁 Estrutura de Templates
 
 O projeto utilizará Templates reutilizáveis.
 
-Estrutura prevista:
+### Estrutura prevista
 
-\`\`\`text
-
+```text
 templates/
-
 │
-
 ├── base.html
-
 │
-
 ├── home.html
-
 │
-
 ├── includes/
-
-│   ├── navbar.html
-
-│   └── footer.html
-
+│   ├── navbar.html
+│   └── footer.html
 │
-
 └── veiculos/
+    ├── lista.html
+    ├── cadastro.html
+    ├── detalhes.html
+    ├── editar.html
+    └── excluir.html
+```
 
-    ├── lista.html
+---
 
-    ├── cadastro.html
-
-    ├── detalhes.html
-
-    ├── editar.html
-
-    └── excluir.html
-
-\`\`\`
-
-**---**
-
-**# 19. Arquivos Estáticos**
+# 19. 📂 Arquivos Estáticos
 
 Os arquivos estáticos serão organizados separadamente dos Templates.
 
-Estrutura:
+### Estrutura
 
-\`\`\`text
-
+```text
 static/
-
 │
-
 ├── css/
-
-│   └── style.css
-
+│   └── style.css
 │
-
 └── images/
+```
 
-\`\`\`
+O arquivo `style.css` será utilizado para complementar os componentes do Bootstrap.
 
-O arquivo \`style.css\` será utilizado para complementar os componentes do Bootstrap.
+---
 
-**---**
-
-**# 20. Estrutura Geral do Projeto**
+# 20. 🏗️ Estrutura Geral do Projeto
 
 A estrutura inicial do projeto será organizada aproximadamente da seguinte forma:
 
-\`\`\`text
-
+```text
 FleetCard/
-
 │
-
 ├── manage.py
-
 │
-
 ├── FleetCard/
-
-│   ├── \_\_init\_\_.py
-
-│   ├── settings.py
-
-│   ├── urls.py
-
-│   ├── asgi.py
-
-│   └── wsgi.py
-
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   ├── asgi.py
+│   └── wsgi.py
 │
-
 ├── core/
-
-│   ├── migrations/
-
-│   ├── templates/
-
-│   ├── static/
-
-│   ├── admin.py
-
-│   ├── apps.py
-
-│   ├── models.py
-
-│   ├── urls.py
-
-│   └── views.py
-
+│   ├── migrations/
+│   ├── templates/
+│   ├── static/
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── urls.py
+│   └── views.py
 │
-
 ├── db.sqlite3
-
 │
-
 └── README.md
-
-\`\`\`
+```
 
 A estrutura poderá crescer conforme novas aplicações e funcionalidades forem adicionadas.
 
-**---**
-
-**# 21. Interface**
-
-A interface está sendo desenvolvida utilizando **\*\*Bootstrap 5\*\***, buscando manter uma aparência:
-
-\* Simples;
-
-\* Organizada;
-
-\* Moderna;
-
-\* Responsiva;
-
-\* Fácil de utilizar.
-
-O sistema utiliza **\*\*Bootstrap Icons\*\*** para representar visualmente as funcionalidades.
-
-**### Componentes já implementados**
-
-\* Navbar principal;
-
-\* Logo FleetCard centralizada na navbar;
-
-\* Botão MENU com ícone de hambúrguer;
-
-\* Alternância do botão para FECHAR + X quando o menu está aberto;
-
-\* Botão Home na navbar;
-
-\* Sidebar utilizando Bootstrap Offcanvas;
-
-\* Efeito de interação no botão FECHAR da Sidebar;
-
-\* Carrossel Bootstrap na página inicial;
-
-\* Indicadores do carrossel;
-
-\* Botões anterior e próximo;
-
-\* Imagens responsivas utilizando classes Bootstrap;
-
-\* Seção Hero de apresentação do FleetCard;
-
-\* Banner de apresentação do sistema.
-
-**---**
-
-**# 22. Sidebar Responsivo**
-
-O menu lateral foi implementado utilizando o componente **\*\*Offcanvas do Bootstrap\*\***.
-
-**### Funcionamento**
-
-O botão de menu permanece dentro da navbar principal. Ao clicar:
-
-\`\`\`text
-
-MENU + ☰
-
-↓
-
-abre a Sidebar
-
-↓
-
-FECHAR + X
-
-\`\`\`
-
-Quando a Sidebar é fechada, o botão retorna automaticamente para:
-
-\`\`\`text
-
-MENU + ☰
-
-\`\`\`
-
-**### Estrutura da Sidebar**
-
-A Sidebar possui opções de navegação para:
-
-\* 🏠 Home;
-
-\* 🚗 Veículos;
-
-\* ➕ Cadastrar veículo;
-
-\* 📋 Lista de veículos;
-
-\* ✏️ Editar veículos;
-
-\* 🗑️ Excluir veículos;
-
-\* 👤 Motoristas;
-
-\* 📄 Relatórios;
-
-\* ⚙️ Configurações;
-
-\* ℹ️ Sobre o FleetCard.
-
-**### Botão FECHAR**
-
-O botão FECHAR + X possui uma interação visual implementada com CSS:
-
-\* O texto apresenta um pequeno deslocamento ao passar o mouse;
-
-\* O ícone X realiza uma rotação de 90 graus;
-
-\* O botão permanece integrado ao cabeçalho da Sidebar.
-
-**### Responsividade**
-
-A Sidebar utiliza o sistema Offcanvas do Bootstrap 5, permitindo sua utilização em:
-
-\* Computadores;
-
-\* Notebooks;
-
-\* Tablets;
-
-\* Smartphones.
-
-Os links que ainda utilizam \`#\` permanecerão como pontos de navegação até que as respectivas funcionalidades e URLs sejam implementadas.
-
-**---**
-
-**## 22.1 Carrossel da Home**
-
-A página inicial possui um carrossel Bootstrap localizado logo abaixo da navbar e ocupando a largura disponível da página.
-
-**### Slides implementados**
-
-O carrossel utiliza três banners:
-
-\* 🚗 FleetCard — Carro;
-
-\* 🏍️ FleetCard — Motocicleta;
-
-\* 🚚 FleetCard — Caminhão.
-
-**### Recursos**
-
-\* Indicadores de slides;
-
-\* Botão anterior;
-
-\* Botão próximo;
-
-\* Troca automática de slides utilizando Bootstrap;
-
-\* Imagens responsivas;
-
-\* Largura de 100% com \`w-100\`;
-
-\* Exibição responsiva com \`img-fluid\`.
-
-As imagens não utilizam uma altura fixa no HTML, permitindo que o Bootstrap preserve a proporção dos banners em diferentes tamanhos de tela.
-
-**## 22.2 Hero / Banner de Apresentação**
-
-Após o carrossel, a Home possui uma seção de apresentação do FleetCard.
-
-A seção apresenta:
-
-\* Badge **\*\*Projeto Integrador\*\***;
-
-\* Nome **\*\*FleetCard\*\***;
-
-\* Título **\*\*Sistema de Gestão de Veículos\*\***;
-
-\* Descrição do sistema;
-
-\* Botão **\*\*Acessar o sistema\*\***;
-
-\* Banner de apresentação do projeto.
-
-**### Responsividade do Hero**
-
-O layout utiliza o sistema de grid do Bootstrap:
-
-\`\`\`text
-
-Desktop
-
-┌──────────────────────┬──────────────────────┐
-
-│       TEXTO          │        BANNER        │
-
-│      FleetCard       │                      │
-
-└──────────────────────┴──────────────────────┘
-
-Tablet / Smartphone
-
-┌─────────────────────────────────────────────┐
-
-│                    TEXTO                    │
-
-├─────────────────────────────────────────────┤
-
-│                   BANNER                    │
-
-└─────────────────────────────────────────────┘
-
-\`\`\`
-
-São utilizadas classes Bootstrap como:
-
-\* \`container-fluid\`;
-
-\* \`container\`;
-
-\* \`row\`;
-
-\* \`col-12\`;
-
-\* \`col-lg-6\`;
-
-\* \`g-5\`;
-
-\* \`text-center\`;
-
-\* \`text-lg-start\`;
-
-\* \`img-fluid\`;
-
-\* \`w-100\`;
-
-\* \`rounded-3\`;
-
-\* \`shadow-lg\`.
-
-**# 23. URLs e Views**
+---
+
+# 21. 🎨 Interface
+
+A interface será desenvolvida utilizando Bootstrap 5, buscando manter uma aparência:
+
+* ✨ Simples;
+* 📋 Organizada;
+* 💻 Moderna;
+* 📱 Responsiva;
+* 👍 Fácil de utilizar.
+
+O sistema utilizará Bootstrap Icons para representar visualmente as funcionalidades.
+
+---
+
+# 22. ☰ Sidebar Responsivo
+
+O menu lateral será desenvolvido utilizando o componente Offcanvas do Bootstrap.
+
+### ⚙️ Funcionamento
+
+```text
+        ☰
+        ↓
+   Abre o menu
+        ↓
+┌─────────────────────────┐
+│ 🚗 FleetCard        ×   │
+├─────────────────────────┤
+│ 🚗 VEÍCULOS             │
+│    Cadastrar veículo    │
+│    Lista de veículos    │
+│    Consultar veículo    │
+│                         │
+│ 📚 CADASTROS            │
+│    Marcas               │
+│    Categorias           │
+│    Combustíveis         │
+│    Cores                │
+│                         │
+│ 📞 Contatos             │
+│                         │
+│ ℹ️ Sobre                │
+└─────────────────────────┘
+```
+
+O menu deverá permanecer funcional independentemente do tamanho da tela.
+
+---
+
+# 23. 🔗 URLs e Views
 
 O projeto deverá organizar as rotas utilizando o sistema de URLs do Django.
 
-Exemplo inicial:
+### Exemplo inicial
 
-\`\`\`python
-
+```python
 urlpatterns = [
-
-    path('', views.home, name='home'),
-
+    path('', views.home, name='home'),
 ]
-
-\`\`\`
+```
 
 À medida que as funcionalidades forem implementadas, novas rotas serão adicionadas para:
 
-\* Cadastro;
+* ➕ Cadastro;
+* 📋 Listagem;
+* ✏️ Edição;
+* 🗑️ Exclusão.
 
-\* Listagem;
+---
 
-\* Detalhes;
+# 24. 🗄️ Banco de Dados
 
-\* Edição;
+O projeto utilizará SQLite como banco de dados durante o desenvolvimento.
 
-\* Exclusão;
+A comunicação com o banco será realizada através do Django ORM.
 
-\* Manutenção;
+### Fluxo
 
-\* Relatórios;
-
-\* Cadastros complementares.
-
-**---**
-
-**# 24. Banco de Dados**
-
-O projeto utilizará **\*\*SQLite\*\*** como banco de dados durante o desenvolvimento.
-
-A comunicação com o banco será realizada através do **\*\*Django ORM\*\***.
-
-Fluxo:
-
-\`\`\`text
-
+```text
 Model
-
-  ↓
-
+  ↓
 Django ORM
-
-  ↓
-
+  ↓
 Migration
-
-  ↓
-
+  ↓
 SQLite
-
-\`\`\`
+```
 
 As alterações nos modelos serão aplicadas através das migrations do Django.
 
-Comandos principais:
+### Comandos principais
 
-\`\`\`bash
-
+```bash
 python manage.py makemigrations
+```
 
-\`\`\`
-
-\`\`\`bash
-
+```bash
 python manage.py migrate
+```
 
-\`\`\`
+---
 
-**---**
-
-**# 25. Django Admin**
+# 25. 🔐 Django Admin
 
 O Django Admin será utilizado para gerenciamento administrativo.
 
-Para criar um usuário administrador:
+### Para criar um usuário administrador:
 
-\`\`\`bash
-
+```bash
 python manage.py createsuperuser
+```
 
-\`\`\`
+### Acesso:
 
-Acesso:
-
-\`\`\`text
-
+```text
 /admin/
-
-\`\`\`
+```
 
 O Admin será utilizado para facilitar o gerenciamento dos registros durante o desenvolvimento e também como ferramenta administrativa do sistema.
 
-**---**
+---
+
+# 26. 🔄 Fluxo Principal do Sistema
+
+```text
+FLEETCARD
+    │
+    ↓
+  HOME
+    │
+    ↓
+  ☰ MENU
+    │
+    ┌─────────────┐
+    ↓             ↓
+VEÍCULOS      CADASTRAR
+    │             │
+    ↓             ↓
+  Marcas       Cadastrar
+Categorias     Listar
+  Cores        Editar
+    │          Excluir
+    │
+    ↓
+BANCO DE DADOS
+    │
+    ↓
+RELATÓRIOS
+```
+
+---
+
+# 27. 🚀 Desenvolvimento por Etapas
+
+## Etapa 1 — ⚙️ Configuração inicial
+
+* Criar projeto Django;
+* Configurar aplicação;
+* Criar estrutura de Templates;
+* Criar `base.html`;
+* Criar `home.html`;
+* Criar `navbar.html`;
+* Criar `footer.html`;
+* Configurar Bootstrap;
+* Configurar Bootstrap Icons;
+* Criar `style.css`.
+
+---
+
+## Etapa 2 — ☰ Navegação
+
+* Implementar Sidebar;
+* Implementar botão hambúrguer;
+* Organizar menu por categorias;
+* Criar links para as funcionalidades;
+* Testar responsividade.
+
+---
+
+## Etapa 3 — 🗄️ Banco de dados
+
+* Criar model Veículo;
+* Definir campos;
+* Definir tipos de veículos;
+* Criar migrations;
+* Aplicar migrations;
+* Registrar modelo no Admin.
+
+---
+
+## Etapa 4 — 📝 Cadastro de veículos
+
+* Criar formulário;
+* Criar View de cadastro;
+* Criar URL;
+* Criar Template;
+* Validar dados;
+* Salvar no banco.
+
+---
+
+## Etapa 5 — 📋 Listagem
+
+* Criar View de listagem;
+* Criar Template;
+* Exibir veículos;
+* Criar ações;
+* Criar consulta.
+
+---
+
+## Etapa 6 — 🔄 CRUD
+
+* Visualizar;
+* Editar;
+* Excluir;
+* Confirmar exclusão.
+
+---
+
+## Etapa 7 — 📚 Cadastros complementares
 
-**# 26. Fluxo Principal do Sistema**
+* Marcas;
+* Categorias;
+* Combustíveis;
+* Cores.
 
-\`\`\`text
+---
 
-                    FLEETCARD
+## Etapa 8 — 📊 Relatórios
 
-                        │
+* Relatório geral;
+* Relatório por tipo;
+* Relatório por marca;
+* Relatório de manutenção;
+* Relatório de documentação.
 
-                        ↓
+---
 
-                     HOME
+## Etapa 10 — 🧪 Testes e finalização
 
-                        │
+* Testar cadastro;
+* Testar edição;
+* Testar exclusão;
+* Testar consultas;
+* Testar validações;
+* Testar Django Admin;
+* Testar responsividade;
+* Organizar código;
+* Atualizar documentação;
+* Publicar código no GitHub.
 
-                        ↓
+---
 
-                      ☰ MENU
+# 28. 🌿 Controle de Versão
 
-                        │
+O desenvolvimento será acompanhado através do Git e GitHub.
 
-          ┌─────────────┼─────────────┐
+### Estrutura de branches planejada
 
-          ↓             ↓             ↓
-
-      VEÍCULOS      CADASTROS      CONTROLE
-
-          │             │             │
-
-          ↓             ↓             ↓
-
-     Cadastrar       Marcas       Manutenção
-
-     Listar          Categorias   Revisões
-
-     Consultar       Combustíveis Documentação
-
-     Editar          Cores        Quilometragem
-
-     Excluir
-
-          │
-
-          ↓
-
-      BANCO DE DADOS
-
-          │
-
-          ↓
-
-        RELATÓRIOS
-
-\`\`\`
-
-**---**
-
-**# 27. Desenvolvimento por Etapas**
-
-**## Etapa 1 — Configuração inicial**
-
-\* [x] Criar projeto Django;
-
-\* [x] Configurar aplicação;
-
-\* [x] Criar estrutura de Templates;
-
-\* [x] Criar \`base.html\`;
-
-\* [x] Criar \`home.html\`;
-
-\* [x] Criar \`navbar.html\`;
-
-\* [x] Criar \`footer.html\`;
-
-\* [x] Configurar Bootstrap;
-
-\* [x] Configurar Bootstrap Icons;
-
-\* [x] Criar \`style.css\`;
-
-\* [x] Criar carrossel da Home;
-
-\* [x] Adicionar banners de carro, moto e caminhão;
-
-\* [x] Adicionar indicadores e controles do carrossel;
-
-\* [x] Tornar imagens do carrossel responsivas;
-
-\* [x] Criar seção Hero de apresentação;
-
-\* [x] Adicionar banner de apresentação do sistema.
-
-**## Etapa 2 — Navegação**
-
-\* [x] Implementar Sidebar com Bootstrap Offcanvas;
-
-\* [x] Implementar botão hambúrguer;
-
-\* [x] Criar alternância MENU + ☰ / FECHAR + X;
-
-\* [x] Adicionar botão Home na navbar;
-
-\* [x] Organizar opções de navegação da Sidebar;
-
-\* [x] Implementar comportamento responsivo da Sidebar;
-
-\* [x] Adicionar efeito visual no botão FECHAR;
-
-\* [ ] Criar links funcionais para todas as funcionalidades.
-
-**## Etapa 3 — Banco de dados**
-
-\* [ ] Criar model Veículo;
-
-\* [ ] Definir campos;
-
-\* [ ] Definir tipos de veículos;
-
-\* [ ] Criar migrations;
-
-\* [ ] Aplicar migrations;
-
-\* [ ] Registrar modelo no Admin.
-
-**## Etapa 4 — Cadastro de veículos**
-
-\* [ ] Criar formulário;
-
-\* [ ] Criar View de cadastro;
-
-\* [ ] Criar URL;
-
-\* [ ] Criar Template;
-
-\* [ ] Validar dados;
-
-\* [ ] Salvar no banco.
-
-**## Etapa 5 — Listagem**
-
-\* [ ] Criar View de listagem;
-
-\* [ ] Criar Template;
-
-\* [ ] Exibir veículos;
-
-\* [ ] Criar ações;
-
-\* [ ] Criar consulta.
-
-**## Etapa 6 — CRUD**
-
-\* [ ] Visualizar;
-
-\* [ ] Editar;
-
-\* [ ] Excluir;
-
-\* [ ] Confirmar exclusão.
-
-**## Etapa 7 — Cadastros complementares**
-
-\* [ ] Marcas;
-
-\* [ ] Categorias;
-
-\* [ ] Combustíveis;
-
-\* [ ] Cores.
-
-**## Etapa 8 — Controle**
-
-\* [ ] Manutenção;
-
-\* [ ] Revisões;
-
-\* [ ] Quilometragem;
-
-\* [ ] Documentação.
-
-**## Etapa 9 — Relatórios**
-
-\* [ ] Relatório geral;
-
-\* [ ] Relatório por tipo;
-
-\* [ ] Relatório por marca;
-
-\* [ ] Relatório de manutenção;
-
-\* [ ] Relatório de documentação.
-
-**## Etapa 10 — Testes e finalização**
-
-\* [ ] Testar cadastro;
-
-\* [ ] Testar edição;
-
-\* [ ] Testar exclusão;
-
-\* [ ] Testar consultas;
-
-\* [ ] Testar validações;
-
-\* [ ] Testar Django Admin;
-
-\* [ ] Testar responsividade;
-
-\* [ ] Organizar código;
-
-\* [ ] Atualizar documentação;
-
-\* [ ] Publicar código no GitHub.
-
-**---**
-
-**# 28. Controle de Versão**
-
-O desenvolvimento será acompanhado através do **\*\*Git e GitHub\*\***.
-
-Estrutura de branches planejada:
-
-\`\`\`text
-
+```text
 main
+ │
+ └── develop
+       │
+       ├── feature/sidebar
+       ├── feature/veiculos
+       ├── feature/crud-veiculos
+       ├── feature/cadastros
+       ├── feature/manutencao
+       └── feature/relatorios
+```
 
- │
-
- └── develop
-
-       │
-
-       ├── feature/sidebar
-
-       ├── feature/veiculos
-
-       ├── feature/crud-veiculos
-
-       ├── feature/cadastros
-
-       ├── feature/manutencao
-
-       └── feature/relatorios
-
-\`\`\`
-
-A branch \`main\` será utilizada para versões estáveis.
-
-A branch \`develop\` será utilizada para desenvolvimento e testes.
+A branch `main` será utilizada para versões estáveis.
 
 As funcionalidades poderão ser desenvolvidas em branches específicas antes de serem integradas.
 
-**---**
+---
 
-**# 29. Status do Projeto**
+# 29. 📌 Status do Projeto
 
-**## 🟢 Implementado**
+## ✅ Implementado
 
-\* Estrutura inicial do projeto Django;
+* Estrutura inicial do projeto Django;
+* Aplicação inicial;
+* Estrutura de Templates;
+* `base.html`;
+* `home.html`;
+* Estrutura de includes;
+* Navbar;
+* Footer;
+* Bootstrap;
+* Bootstrap Icons;
+* CSS estático;
+* Configuração inicial de URLs e Views.
 
-\* Aplicação inicial;
+---
 
-\* Estrutura de Templates;
+## 🔄 Em desenvolvimento
 
-\* \`base.html\`;
+* Sidebar;
+* Menu hambúrguer;
+* Model Veículo;
+* Banco de dados;
+* Cadastro de veículos;
+* Tipos de veículos;
+* CRUD.
 
-\* \`home.html\`;
+---
 
-\* Estrutura de includes;
+## 📋 Planejado
 
-\* Navbar;
+* Marcas;
+* Categorias;
+* Combustíveis;
+* Cores;
+* Manutenção;
+* Revisões;
+* Quilometragem;
+* Documentação;
+* Relatórios;
+* Melhorias no Dashboard.
 
-\* Logo FleetCard centralizada na navbar;
+---
 
-\* Botão MENU com ícone de hambúrguer;
+# 30. 🎓 Projeto Integrador
 
-\* Alternância MENU + ☰ / FECHAR + X;
-
-\* Botão Home na navbar;
-
-\* Sidebar com Bootstrap Offcanvas;
-
-\* Navegação inicial da Sidebar;
-
-\* Efeito visual no botão FECHAR da Sidebar;
-
-\* Footer;
-
-\* Bootstrap;
-
-\* Bootstrap Icons;
-
-\* CSS estático;
-
-\* Carrossel Bootstrap na Home;
-
-\* Banners de carro, moto e caminhão;
-
-\* Indicadores do carrossel;
-
-\* Controles anterior e próximo;
-
-\* Imagens responsivas do carrossel;
-
-\* Seção Hero de apresentação;
-
-\* Banner de apresentação do sistema;
-
-\* Layout responsivo utilizando Bootstrap;
-
-\* Configuração inicial de URLs e Views.
-
-**## 🟡 Em desenvolvimento**
-
-\* Links funcionais da Sidebar;
-
-\* Model Veículo;
-
-\* Banco de dados;
-
-\* Cadastro de veículos;
-
-\* Tipos de veículos;
-
-\* CRUD.
-
-**## 🔵 Planejado**
-
-\* Marcas;
-
-\* Categorias;
-
-\* Combustíveis;
-
-\* Cores;
-
-\* Manutenção;
-
-\* Revisões;
-
-\* Quilometragem;
-
-\* Documentação;
-
-\* Relatórios;
-
-\* Melhorias no Dashboard.
-
-**---**
-
-**# 30. Projeto Integrador**
-
-O **\*\*FleetCard\*\*** tem como finalidade aplicar, de forma prática, os conhecimentos desenvolvidos durante a formação em programação Back-End com Python e Django.
+O FleetCard tem como finalidade aplicar, de forma prática, os conhecimentos desenvolvidos durante a formação em programação Back-End com Python e Django.
 
 O projeto será desenvolvido de maneira incremental, partindo da estrutura inicial da aplicação e evoluindo para um sistema completo de gerenciamento de veículos.
 
 A documentação acompanhará a evolução do projeto, registrando as funcionalidades desenvolvidas, tecnologias utilizadas, requisitos e regras de negócio.
 
-**---**
+---
 
-**# 31. Conclusão**
+# 31. 🏁 Conclusão
 
-O **\*\*FleetCard\*\*** propõe uma solução web para centralizar o cadastro e gerenciamento de veículos.
+O FleetCard propõe uma solução web para centralizar o cadastro e gerenciamento de veículos.
 
-A utilização de **\*\*Python, Django, ORM, SQLite, Bootstrap e Django Admin\*\*** permitirá desenvolver uma aplicação estruturada e responsiva.
+A utilização de Python, Django, ORM, SQLite, Bootstrap e Django Admin permitirá desenvolver uma aplicação estruturada e responsiva.
 
-O sistema será preparado para trabalhar com diferentes tipos de veículos, possibilitando sua utilização em cenários que envolvam carros, motocicletas, caminhões, vans, ônibus, tratores, utilitários e outros veículos.
+O sistema será preparado para trabalhar com diferentes tipos de veículos, possibilitando sua utilização em cenários que envolvam carros, motocicletas e caminhões.
 
 A arquitetura também permitirá a evolução do projeto para funcionalidades de manutenção, revisões, documentação e relatórios.
 
-\> 🚗 **\*\*FleetCard — Organização, controle e gestão de veículos em um único sistema.\*\***
+---
 
-**---**
+# 🚗 FleetCard
 
-**## 👨‍💻 Projeto**
+**Organização, controle e gestão de veículos em um único sistema.**
 
-**\*\*Projeto:\*\*** FleetCard
+---
 
-**\*\*Tipo:\*\*** Projeto Integrador
+# 📌 Projeto
 
-**\*\*Área:\*\*** Desenvolvimento Web
-
-**\*\*Backend:\*\*** Python + Django
-
-**\*\*Banco de Dados:\*\*** SQLite
-
-**\*\*Frontend:\*\*** HTML5 + CSS3 + Bootstrap 5
-
-**\*\*Administração:\*\*** Django Admin
-
-**\*\*Controle de versão:\*\*** Git + GitHub
-
-**---**
+| Informação            | Detalhes                   |
+| --------------------- | -------------------------- |
+| 🚗 Projeto            | FleetCard                  |
+| 📚 Tipo               | Projeto Integrador         |
+| 💻 Área               | Desenvolvimento Web        |
+| 🐍 Backend            | Python + Django            |
+| 🗄️ Banco de Dados    | SQLite                     |
+| 🎨 Frontend           | HTML5 + CSS3 + Bootstrap 5 |
+| 🔐 Administração      | Django Admin               |
+| 🌿 Controle de versão | Git + GitHub               |
