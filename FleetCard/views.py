@@ -1,4 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.contrib.auth import logout
+from django.contrib.admin.views.decorators import staff_member_required
+
+from .models import Veiculo
 
 from .veiculos_api import (
     buscar_carros,
@@ -8,26 +12,37 @@ from .veiculos_api import (
 )
 
 
+# HOME
+
 def home(request):
     return render(request, 'home.html')
 
+
+# SOBRE
 
 def sobre(request):
     return render(request, 'sobre.html')
 
 
+# CONTATOS
+
 def contatos(request):
     return render(request, 'contatos.html')
 
 
+# API DE VEICULOS
+
 def pagina_veiculos(request):
 
-    # Busca os veículos
+    # Veiculos cadastrados no banco pelo Admin
+    veiculos = Veiculo.objects.all().order_by('-id')
+
+    # Veiculos recebidos da API
     carros = buscar_carros()[:5]
     motos = buscar_motos()[:5]
     caminhoes = buscar_caminhoes()[:5]
 
-    # Busca imagens dos carros
+    # Imagens dos carros
     for veiculo in carros:
         veiculo["imagem"] = buscar_imagem(
             veiculo["Make_Name"],
@@ -35,7 +50,7 @@ def pagina_veiculos(request):
             "car"
         )
 
-    # Busca imagens das motos
+    # Imagens das motos
     for veiculo in motos:
         veiculo["imagem"] = buscar_imagem(
             veiculo["Make_Name"],
@@ -43,7 +58,7 @@ def pagina_veiculos(request):
             "moto"
         )
 
-    # Busca imagens dos caminhões
+    # Imagens dos caminhoes
     for veiculo in caminhoes:
         veiculo["imagem"] = buscar_imagem(
             veiculo["Make_Name"],
@@ -51,8 +66,9 @@ def pagina_veiculos(request):
             "caminhao"
         )
 
-    # Envia os veículos para a página
+    # Envia os dados para a pagina
     contexto = {
+        "veiculos": veiculos,
         "carros": carros,
         "motos": motos,
         "caminhoes": caminhoes,
@@ -65,23 +81,34 @@ def pagina_veiculos(request):
     )
 
 
+
+# DESLOGAR E VOLTAR PARA HOME
+
+def deslogar(request):
+
+    logout(request)
+
+    return redirect('home')
+
+
+# DETALHES DO VEICULO DA API
+
 def ver_detalhes(request, tipo, marca, modelo):
 
-    # Define o nome do tipo
     nomes_tipos = {
         "car": "Carro",
         "moto": "Moto",
         "caminhao": "Caminhão",
     }
 
-    # Busca a imagem do veículo
+    # Busca a imagem
     imagem = buscar_imagem(
         marca,
         modelo,
         tipo
     )
 
-    # Monta os dados do veículo
+    # Dados do veiculo
     veiculo = {
         "marca": marca,
         "modelo": modelo,
@@ -89,11 +116,44 @@ def ver_detalhes(request, tipo, marca, modelo):
         "imagem": imagem,
     }
 
-    # Envia os dados para a página de detalhes
     return render(
         request,
         "ver_detalhes.html",
         {
             "veiculo": veiculo
+        }
+    )
+
+
+# ==================================================
+# CRUD PELO DJANGO ADMIN
+# CREATE - READ - UPDATE - DELETE
+# ==================================================
+
+@staff_member_required(login_url='/admin/login/')
+def lista_veiculos(request):
+
+    # READ - carros cadastrados
+    carros_cadastrados = Veiculo.objects.filter(
+        tipo='carro'
+    ).order_by('-id')
+
+    # READ - motos cadastradas
+    motos_cadastrados = Veiculo.objects.filter(
+        tipo='moto'
+    ).order_by('-id')
+
+    # READ - caminhoes cadastrados
+    caminhoes_cadastrados = Veiculo.objects.filter(
+        tipo='caminhao'
+    ).order_by('-id')
+
+    return render(
+        request,
+        'lista_veiculos.html',
+        {
+            'carros_cadastrados': carros_cadastrados,
+            'motos_cadastrados': motos_cadastrados,
+            'caminhoes_cadastrados': caminhoes_cadastrados,
         }
     )

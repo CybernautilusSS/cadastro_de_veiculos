@@ -66,6 +66,13 @@ class Veiculo(models.Model):
         verbose_name='Observações'
     )
 
+    imagem = models.ImageField(
+        upload_to='veiculos/',
+        blank=True,
+        null=True,
+        verbose_name='Imagem do veículo'
+    )
+
     data_cadastro = models.DateTimeField(
         auto_now_add=True,
         verbose_name='Data de cadastro'
