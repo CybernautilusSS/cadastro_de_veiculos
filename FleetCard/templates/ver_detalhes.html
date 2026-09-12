@@ -1,0 +1,165 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Detalhes do Veículo | FleetCard
+{% endblock %}
+
+{% block content %}
+
+<div class="container py-5">
+
+    <!-- TÍTULO -->
+    <div class="text-center mb-5">
+        <h1 class="fw-bold display-5">
+            Detalhes do Veículo
+        </h1>
+
+        <p class="text-muted fs-5">
+            Informações completas do veículo selecionado
+        </p>
+    </div>
+
+
+    <!-- CARD DE DETALHES -->
+    <div class="row justify-content-center">
+
+        <div class="col-12 col-lg-10">
+
+            <div class="card border-0 shadow-lg overflow-hidden">
+
+                <div class="row g-0">
+
+                    <!-- IMAGEM -->
+                    <div class="col-12 col-md-6">
+
+                        {% if veiculo.imagem %}
+
+                            <img
+                                src="{{ veiculo.imagem }}"
+                                class="img-fluid w-100 h-100 vehicle-detail-image"
+                                alt="{{ veiculo.marca }} {{ veiculo.modelo }}"
+                            >
+
+                        {% else %}
+
+                            <div class="vehicle-detail-placeholder
+                                        d-flex
+                                        align-items-center
+                                        justify-content-center
+                                        h-100">
+
+                                {% if veiculo.tipo == "Moto" %}
+                                    <span class="display-1">🏍️</span>
+
+                                {% elif veiculo.tipo == "Caminhão" %}
+                                    <span class="display-1">🚛</span>
+
+                                {% else %}
+                                    <span class="display-1">🚗</span>
+                                {% endif %}
+
+                            </div>
+
+                        {% endif %}
+
+                    </div>
+
+
+                    <!-- INFORMAÇÕES -->
+                    <div class="col-12 col-md-6">
+
+                        <div class="card-body p-4 p-lg-5">
+
+                            <!-- CATEGORIA -->
+                            {% if veiculo.tipo == "Carro" %}
+
+                                <span class="badge bg-danger mb-3">
+                                    🚗 Carro
+                                </span>
+
+                            {% elif veiculo.tipo == "Moto" %}
+
+                                <span class="badge bg-warning text-dark mb-3">
+                                    🏍️ Moto
+                                </span>
+
+                            {% else %}
+
+                                <span class="badge bg-secondary mb-3">
+                                    🚛 Caminhão
+                                </span>
+
+                            {% endif %}
+
+
+                            <!-- NOME -->
+                            <h1 class="fw-bold mb-4">
+                                {{ veiculo.marca }}
+                                {{ veiculo.modelo }}
+                            </h1>
+
+
+                            <hr>
+
+
+                            <!-- DADOS -->
+                            <div class="mt-4">
+
+                                <div class="mb-3">
+                                    <small class="text-muted">
+                                        Marca
+                                    </small>
+
+                                    <h5 class="fw-bold mb-0">
+                                        {{ veiculo.marca }}
+                                    </h5>
+                                </div>
+
+
+                                <div class="mb-3">
+                                    <small class="text-muted">
+                                        Modelo
+                                    </small>
+
+                                    <h5 class="fw-bold mb-0">
+                                        {{ veiculo.modelo }}
+                                    </h5>
+                                </div>
+
+
+                                <div class="mb-4">
+                                    <small class="text-muted">
+                                        Categoria
+                                    </small>
+
+                                    <h5 class="fw-bold mb-0">
+                                        {{ veiculo.tipo }}
+                                    </h5>
+                                </div>
+
+                            </div>
+
+
+                            <!-- BOTÃO VOLTAR -->
+                            <a
+                                href="{% url 'pagina_veiculos' %}"
+                                class="btn btn-outline-danger"
+                            >
+                                ← Voltar para veículos
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
