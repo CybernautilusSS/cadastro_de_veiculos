@@ -1,283 +1,310 @@
-
 {% extends 'base.html' %}
 
 {% block title %}
-    Veículos | FleetCard
+Veículos | FleetCard
 {% endblock %}
 
 {% block content %}
 
-<!-- Cabeçalho -->
-<section class="py-5 bg-info">
+<div class="container py-5">
 
-    <div class="container">
+    <!-- Cabeçalho -->
 
-        <div class="text-center">
+    <div class="text-center mb-5">
 
-            <i class="bi bi-car-front-fill text-primary display-4"></i>
+        <h1 class="fw-bold display-5">
+            Catálogo de Veículos
+        </h1>
 
-            <h1 class="fw-bold mt-3">
-                Veículos
-            </h1>
-
-            <p class="text-secondary mb-0">
-                Consulte e acompanhe os veículos cadastrados no FleetCard.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- Carros -->
-<section class="py-5">
-
-    <div class="container">
-
-        <div class="d-flex align-items-center mb-4">
-
-            <i class="bi bi-car-front-fill text-primary fs-2 me-3"></i>
-
-            <div>
-                <h2 class="fw-bold mb-1">
-                    Carros
-                </h2>
-
-                <p class="text-secondary mb-0">
-                    Veículos de passeio e utilitários.
-                </p>
-            </div>
-
-        </div>
-
-
-        <div class="row g-4">
-
-            <!-- Veículo -->
-            <div class="col-12 col-sm-6 col-lg-4">
-
-                <div class="card h-100 border-0 shadow-sm">
-
-                    <div class="card-body">
-
-                        <div class="d-flex justify-content-between align-items-center mb-3">
-
-                            <i class="bi bi-car-front-fill text-primary fs-1"></i>
-
-                            <span class="badge bg-success">
-                                Ativo
-                            </span>
-
-                        </div>
-
-                        <h5 class="card-title fw-bold">
-                            {{ carro.nome|default:"Nome do veículo" }}
-                        </h5>
-
-                        <p class="card-text text-secondary mb-1">
-                            Marca:
-                            {{ carro.marca|default:"-" }}
-                        </p>
-
-                        <p class="card-text text-secondary mb-1">
-                            Modelo:
-                            {{ carro.modelo|default:"-" }}
-                        </p>
-
-                        <p class="card-text text-secondary">
-                            Ano:
-                            {{ carro.ano|default:"-" }}
-                        </p>
-
-                        <a href="#" class="btn btn-outline-primary w-100">
-                            <i class="bi bi-eye me-2"></i>
-                            Ver detalhes
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- Motos -->
-<section class="py-5 bg-info">
-
-    <div class="container">
-
-        <div class="d-flex align-items-center mb-4">
-
-            <i class="bi bi-bicycle text-primary fs-2 me-3"></i>
-
-            <div>
-                <h2 class="fw-bold mb-1">
-                    Motos
-                </h2>
-
-                <p class="text-secondary mb-0">
-                    Motocicletas cadastradas na frota.
-                </p>
-            </div>
-
-        </div>
-
-
-        <div class="row g-4">
-
-            <!-- Veículo -->
-            <div class="col-12 col-sm-6 col-lg-4">
-
-                <div class="card h-100 border-0 shadow-sm">
-
-                    <div class="card-body">
-
-                        <div class="d-flex justify-content-between align-items-center mb-3">
-
-                            <i class="bi bi-bicycle text-primary fs-1"></i>
-
-                            <span class="badge bg-success">
-                                Ativo
-                            </span>
-
-                        </div>
-
-                        <h5 class="card-title fw-bold">
-                            {{ moto.nome|default:"Nome da moto" }}
-                        </h5>
-
-                        <p class="card-text text-secondary mb-1">
-                            Marca:
-                            {{ moto.marca|default:"-" }}
-                        </p>
-
-                        <p class="card-text text-secondary mb-1">
-                            Modelo:
-                            {{ moto.modelo|default:"-" }}
-                        </p>
-
-                        <p class="card-text text-secondary">
-                            Ano:
-                            {{ moto.ano|default:"-" }}
-                        </p>
-
-                        <a href="#" class="btn btn-outline-primary w-100">
-                            <i class="bi bi-eye me-2"></i>
-                            Ver detalhes
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- Caminhões -->
-<section class="py-5">
-
-    <div class="container">
-
-        <div class="d-flex align-items-center mb-4">
-
-            <i class="bi bi-truck text-primary fs-2 me-3"></i>
-
-            <div>
-                <h2 class="fw-bold mb-1">
-                    Caminhões
-                </h2>
-
-                <p class="text-secondary mb-0">
-                    Caminhões e veículos de transporte.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="row g-4">
-
-            <!-- Veículo -->
-            <div class="col-12 col-sm-6 col-lg-4">
-
-                <div class="card h-100 border-0 shadow-sm">
-
-                    <div class="card-body">
-
-                        <div class="d-flex justify-content-between align-items-center mb-3">
-
-                            <i class="bi bi-truck text-primary fs-1"></i>
-
-                            <span class="badge bg-success">
-                                Ativo
-                            </span>
-
-                        </div>
-
-                        <h5 class="card-title fw-bold">
-                            {{ caminhao.nome|default:"Nome do caminhão" }}
-                        </h5>
-
-                        <p class="card-text text-secondary mb-1">
-                            Marca:
-                            {{ caminhao.marca|default:"-" }}
-                        </p>
-
-                        <p class="card-text text-secondary mb-1">
-                            Modelo:
-                            {{ caminhao.modelo|default:"-" }}
-                        </p>
-
-                        <p class="card-text text-secondary">
-                            Ano:
-                            {{ caminhao.ano|default:"-" }}
-                        </p>
-
-                        <a href="#" class="btn btn-outline-primary w-100">
-                            <i class="bi bi-eye me-2"></i>
-                            Ver detalhes
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- Rodapé da página -->
-<section class="py-4 bg-info">
-
-    <div class="container text-center">
-
-        <p class="text-secondary mb-0">
-            FleetCard — Gestão inteligente de veículos.
+        <p class="text-muted fs-5">
+            Consulte carros, motos e caminhões
         </p>
 
     </div>
 
-</section>
+
+    <!-- Carros -->
+
+    <section class="mb-5">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+
+            <div>
+
+                <h2 class="fw-bold mb-1">
+                    🚗 Carros
+                </h2>
+
+                <p class="text-muted mb-0">
+                    {{ carros|length }} veículos encontrados
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            {% for veiculo in carros %}
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+
+                <div class="card h-100 shadow-sm border-0 vehicle-card">
+
+                    {% if veiculo.imagem %}
+
+                    <img
+                        src="{{ veiculo.imagem }}"
+                        class="card-img-top vehicle-image"
+                        alt="{{ veiculo.Make_Name }} {{ veiculo.Model_Name }}"
+                    >
+
+                    {% else %}
+
+                    <div class="vehicle-image d-flex align-items-center justify-content-center bg-light">
+
+                        <span class="fs-1">
+                            🚗
+                        </span>
+
+                    </div>
+
+                    {% endif %}
+
+
+                    <div class="card-body d-flex flex-column">
+
+                        <span class="badge bg-danger align-self-start mb-2">
+                            Carro
+                        </span>
+
+                        <h5 class="card-title fw-bold mb-1">
+                            {{ veiculo.Make_Name }}
+                        </h5>
+
+                        <p class="card-text text-muted mb-3">
+                            {{ veiculo.Model_Name }}
+                        </p>
+
+
+                        <!-- Botão detalhes -->
+
+                        <a
+                            href="{% url 'ver_detalhes' 'car' veiculo.Make_Name veiculo.Model_Name %}"
+                            class="btn btn-outline-danger mt-auto"
+                        >
+                            Ver detalhes
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            {% empty %}
+
+            <div class="col-12">
+
+                <div class="alert alert-warning">
+                    Nenhum carro encontrado.
+                </div>
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+    </section>
+
+
+    <!-- Motos -->
+
+    <section class="mb-5">
+
+        <div class="mb-4">
+
+            <h2 class="fw-bold mb-1">
+                🏍️ Motos
+            </h2>
+
+            <p class="text-muted mb-0">
+                {{ motos|length }} veículos encontrados
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            {% for veiculo in motos %}
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+
+                <div class="card h-100 shadow-sm border-0 vehicle-card">
+
+                    {% if veiculo.imagem %}
+
+                    <img
+                        src="{{ veiculo.imagem }}"
+                        class="card-img-top vehicle-image"
+                        alt="{{ veiculo.Make_Name }} {{ veiculo.Model_Name }}"
+                    >
+
+                    {% else %}
+
+                    <div class="vehicle-image d-flex align-items-center justify-content-center bg-light">
+
+                        <span class="fs-1">
+                            🏍️
+                        </span>
+
+                    </div>
+
+                    {% endif %}
+
+
+                    <div class="card-body d-flex flex-column">
+
+                        <span class="badge bg-warning text-dark align-self-start mb-2">
+                            Moto
+                        </span>
+
+                        <h5 class="card-title fw-bold mb-1">
+                            {{ veiculo.Make_Name }}
+                        </h5>
+
+                        <p class="card-text text-muted mb-3">
+                            {{ veiculo.Model_Name }}
+                        </p>
+
+
+                        <!-- Botão detalhes -->
+
+                        <a
+                            href="{% url 'ver_detalhes' 'moto' veiculo.Make_Name veiculo.Model_Name %}"
+                            class="btn btn-outline-warning mt-auto"
+                        >
+                            Ver detalhes
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            {% empty %}
+
+            <div class="col-12">
+
+                <div class="alert alert-warning">
+                    Nenhuma moto encontrada.
+                </div>
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+    </section>
+
+
+    <!-- Caminhões -->
+
+    <section class="mb-5">
+
+        <div class="mb-4">
+
+            <h2 class="fw-bold mb-1">
+                🚛 Caminhões
+            </h2>
+
+            <p class="text-muted mb-0">
+                {{ caminhoes|length }} veículos encontrados
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            {% for veiculo in caminhoes %}
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+
+                <div class="card h-100 shadow-sm border-0 vehicle-card">
+
+                    {% if veiculo.imagem %}
+
+                    <img
+                        src="{{ veiculo.imagem }}"
+                        class="card-img-top vehicle-image"
+                        alt="{{ veiculo.Make_Name }} {{ veiculo.Model_Name }}"
+                    >
+
+                    {% else %}
+
+                    <div class="vehicle-image d-flex align-items-center justify-content-center bg-light">
+
+                        <span class="fs-1">
+                            🚛
+                        </span>
+
+                    </div>
+
+                    {% endif %}
+
+
+                    <div class="card-body d-flex flex-column">
+
+                        <span class="badge bg-secondary align-self-start mb-2">
+                            Caminhão
+                        </span>
+
+                        <h5 class="card-title fw-bold mb-1">
+                            {{ veiculo.Make_Name }}
+                        </h5>
+
+                        <p class="card-text text-muted mb-3">
+                            {{ veiculo.Model_Name }}
+                        </p>
+
+
+                        <!-- Botão detalhes -->
+
+                        <a
+                            href="{% url 'ver_detalhes' 'caminhao' veiculo.Make_Name veiculo.Model_Name %}"
+                            class="btn btn-outline-secondary mt-auto"
+                        >
+                            Ver detalhes
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            {% empty %}
+
+            <div class="col-12">
+
+                <div class="alert alert-warning">
+                    Nenhum caminhão encontrado.
+                </div>
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+    </section>
+
+</div>
 
 {% endblock %}
-
