@@ -13,12 +13,10 @@
             type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarFleetCard"
             aria-controls="sidebarFleetCard">
 
-           
-
-            <i id="menuIconFleetCard" class="bi bi-list fs-2 text-white">
-            </i>
+            <i id="menuIconFleetCard" class="bi bi-list fs-2 text-white"></i>
 
         </button>
+
 
         <!-- Logo -->
 
@@ -28,6 +26,7 @@
                 alt="FleetCard" class="img-fluid mt-4" style="max-height: 150px; width: auto;">
 
         </a>
+
 
         <!-- Home -->
 
@@ -71,10 +70,9 @@
 
     <!-- Conteúdo -->
 
-    <div class="offcanvas-body p-0 bg-info">
+    <div class="offcanvas-body py-5">
 
-        <div class="list-group list-group-flush bg-info">
-
+        <div class="list-group list-group-flush">
 
             <!-- Home -->
 
@@ -98,58 +96,119 @@
             </a>
 
 
-            <!-- Cadastrar -->
+            <!-- Área administrativa -->
 
-            <a href="#" class="list-group-item list-group-item-action py-3">
+            {% if user.is_authenticated and user.is_staff %}
 
-                <i class="bi bi-plus-circle-fill text-primary me-3"></i>
+            <!-- Cadastrar veículo -->
+
+            <a href="{% url 'admin:index' %}" class="list-group-item list-group-item-action py-3">
+
+                <i class="bi bi-plus-circle-fill text-success me-3"></i>
 
                 Cadastrar veículo
 
             </a>
 
-            <a href="{% url 'contatos' %}" class="list-group-item list-group-item-action py-3">
 
-                <i class="bi bi-telephone-fill text-primary me-3"></i>
+            <!-- Listar veículos -->
 
-                Contatos
+            <a href="{% url 'lista_veiculos' %}" class="list-group-item list-group-item-action py-3">
 
-            </a>
+                <i class="bi bi-list-ul text-primary me-3"></i>
 
-            <a href="{% url 'sobre' %}" class="list-group-item list-group-item-action py-3">
-
-                <i class="bi bi-info-circle-fill text-primary me-3"></i>
-            
-
-                Sobre o FleetCard
+                Listar veículos
 
             </a>
 
+            {% endif %}
 
-        </div>
 
 
-        <!-- Rodapé -->
 
-        <div class="text-center bg-primary w-100 p-4">
 
-            <a href="/" class="d-block text-decoration-none">
 
-                <img src="{% static 'imagens/Logo_FleetCard_para_cadastro_de_veículos-removebg-preview.png' %}"
-                    alt="FleetCard" class="img-fluid d-block mx-auto w-75 w-md-50">
+            <!-- Contatos / Sobre / Acessar ou Deslogar -->
 
-            </a>
+            <div class="d-flex justify-content-center align-items-center gap-1 mt-3 flex-nowrap">
 
-            <h5 class="text-primary fw-bold mb-0">
-                FleetCard
-            </h5>
+                <!-- Contatos -->
 
-            <p class="text-primary small mb-0">
-                Sistema de cadastro e controle de veículos.
-            </p>
+                <a href="{% url 'contatos' %}" class="list-group-item list-group-item-action py-3 px-2">
+
+                    <i class="bi bi-telephone-fill text-primary me-2"></i>
+
+                    Contatos
+
+                </a>
+
+
+                <!-- Sobre -->
+
+                <a href="{% url 'sobre' %}" class="list-group-item list-group-item-action py-3 px-2">
+
+                    <i class="bi bi-info-circle-fill text-primary me-2"></i>
+
+                    Sobre
+
+                </a>
+
+
+                
+
+
+                {% if user.is_authenticated %}
+
+                <a href="{% url 'deslogar' %}" class="list-group-item list-group-item-action py-3 px-2">
+
+                    <i class="bi bi-box-arrow-right text-danger me-2"></i>
+
+                    Deslogar
+
+                </a>
+
+                {% else %}
+
+                <a href="{% url 'admin:login' %}" class="list-group-item list-group-item-action py-3 px-2">
+
+                    <i class="bi bi-box-arrow-in-right text-primary me-2"></i>
+
+                    Acessar sistema
+
+                </a>
+
+                {% endif %}
+
+            </div>
+
+
 
         </div>
 
     </div>
+
+
+    <!-- Rodapé -->
+
+    <div class="text-center bg-primary w-100 p-4">
+
+        <a href="/" class="d-block text-decoration-none">
+
+            <img src="{% static 'imagens/Logo_FleetCard_para_cadastro_de_veículos-removebg-preview.png' %}"
+                alt="FleetCard" class="img-fluid d-block mx-auto w-75 w-md-50">
+
+        </a>
+
+        <h5 class="text-primary fw-bold mb-0">
+            FleetCard
+        </h5>
+
+        <p class="text-primary small mb-0">
+            Sistema de cadastro e controle de veículos.
+        </p>
+
+    </div>
+
+</div>
 
 </div>
