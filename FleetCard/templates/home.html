@@ -1,155 +1,106 @@
 {% extends 'base.html' %}
-
 {% load static %}
 
 {% block title %}
-
 Home | FleetCard
-
 {% endblock %}
-
 
 {% block content %}
 
-
-<!-- CARROSSEL -->
-
+<!-- ==================== CARROSSEL ==================== -->
 <section class="container-fluid p-0 m-0">
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselFleetCard" class="carousel slide" data-bs-ride="carousel">
 
-        <!-- INDICADORES -->
-
+        <!-- Indicadores -->
         <div class="carousel-indicators">
-
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1">
-            </button>
-
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">
-            </button>
-
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">
-            </button>
-
+            <button type="button" data-bs-target="#carouselFleetCard" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselFleetCard" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselFleetCard" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
         </div>
 
-
-        <!-- IMAGENS -->
-
+        <!-- Imagens -->
         <div class="carousel-inner">
 
-            <!-- SLIDE 1 -->
-
+            <!-- Slide 1 - Pickup -->
             <div class="carousel-item active">
-
-                <img src="{% static 'imagens/fleetcard-banner.jpg' %}" class="d-block w-100 img-fluid" alt="FleetCard">
-
+                <img src="{% static 'imagens/FaAsl.jpg' %}" class="d-block w-100" alt="FleetCard - Cadastre sua Frota">
             </div>
 
-
-            <!-- SLIDE 2 -->
-
+            <!-- Slide 2 - Carros -->
             <div class="carousel-item">
-
-                <img src="{% static 'imagens/fleetcard-banner-moto-azul.jpg' %}" class="d-block w-100 img-fluid"
-                    alt="FleetCard">
-
+                <img src="{% static 'imagens/75V1Y.jpg' %}" class="d-block w-100"
+                    alt="FleetCard - Controle Total da sua Frota">
             </div>
 
-
-            <!-- SLIDE 3 -->
-
+            <!-- Slide 3 - Frota completa -->
             <div class="carousel-item">
-
-                <img src="{% static 'imagens/fleetcard-banner-caminhao-sem-corte cc.jpg' %}"
-                    class="d-block w-100 img-fluid" alt="FleetCard">
-
+                <img src="{% static 'imagens/37dIV.jpg' %}" class="d-block w-100"
+                    alt="FleetCard - Um sistema. Toda a sua frota">
             </div>
 
         </div>
 
-
-        <!-- BOTÃO ANTERIOR -->
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-
-            <span class="carousel-control-prev-icon" aria-hidden="true">
-            </span>
-
-            <span class="visually-hidden">
-                Anterior
-            </span>
-
+        <!-- Botão Anterior -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselFleetCard" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
         </button>
 
-
-        <!-- BOTÃO PRÓXIMO -->
-
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-
-            <span class="carousel-control-next-icon" aria-hidden="true">
-            </span>
-
-            <span class="visually-hidden">
-                Próximo
-            </span>
-
+        <!-- Botão Próximo -->
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselFleetCard" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
         </button>
 
     </div>
-
 </section>
 
-
-<!-- HERO / BANNER DE APRESENTAÇÃO -->
+<!--  HERO / APRESENTAÇÃO  -->
 <section class="container-fluid bg-dark py-5">
 
     <div class="container">
+        <div class="row align-items-center g-4 g-lg-5">
 
-        <div class="row align-items-center min-vh-100 g-5">
-
-            <!-- TEXTO -->
+            <!-- Texto -->
             <div class="col-12 col-lg-6 text-center text-lg-start">
 
-                <span class="badge bg-primary mb-3 px-3 py-2">
+                <span class="badge bg-primary mb-3 px-3 py-2 rounded-pill">
                     Projeto Integrador
                 </span>
 
-                <h1 class="display-4 fw-bold text-white">
+                <h1 class="display-4 fw-bold text-white mb-2">
                     Fleet<span class="text-info">Card</span>
                 </h1>
 
-                <h2 class="text-primary fw-bold h4">
+                <h2 class="h4 text-primary fw-semibold mb-3">
                     Sistema de Gestão de Veículos
                 </h2>
 
-                <p class="lead text-light mt-3">
-                    Cadastre carros, motos, vans e caminhões
-                    em um só sistema, com controle completo da sua frota.
+                <p class="lead text-light mb-4">
+                    Cadastre carros, motos, vans e caminhões em um só sistema,
+                    com controle completo da sua frota.
                 </p>
 
-                <a href="/admin/" class="btn btn-primary btn-lg mt-3 px-4">
+                <a href="{% url 'admin:index' %}" class="btn btn-primary btn-lg px-4 py-2">
                     <i class="bi bi-car-front-fill me-2"></i>
                     Acessar o sistema
                 </a>
             </div>
 
-            <!-- BANNER -->
+            <!-- Imagem -->
             <div class="col-12 col-lg-6">
-                <div class="p-2 p-md-3 bg-white rounded-4 shadow-lg">
+                <div class="bg-white p-2 p-md-3 rounded-4 shadow-lg">
                     <img src="{% static 'imagens/fleetcard-banner-carro-arte.jpg' %}"
                         alt="Banner FleetCard - Sistema de Gestão de Veículos" class="img-fluid rounded-3 w-100">
                 </div>
             </div>
 
         </div>
-
     </div>
-
 </section>
-
 
 {% endblock %}

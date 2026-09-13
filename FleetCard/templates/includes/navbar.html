@@ -1,214 +1,144 @@
 {% load static %}
 
-<!-- Navbar -->
+<!-- NAVBAR -->
+<nav class="navbar navbar-dark bg-primary shadow-sm sticky-top py-0 border border-white">
+    <div class="container-fluid px-3" style="min-height: 64px;">
 
-<nav class="navbar navbar-dark bg-primary shadow py-0 border text-white">
-
-    <div class="container-fluid px-1">
-
-        <!-- Menu -->
-
+        <!-- Botão do menu -->
         <button id="menuFleetCard"
-            class="btn btn-primary h-100 rounded-0 d-flex flex-column justify-content-center align-items-center"
-            type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarFleetCard"
-            aria-controls="sidebarFleetCard">
-
-            <i id="menuIconFleetCard" class="bi bi-list fs-2 text-white"></i>
-
+                class="btn btn-primary border-0 d-flex align-items-center justify-content-center p-2"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#sidebarFleetCard"
+                aria-controls="sidebarFleetCard"
+                aria-label="Abrir menu">
+            <i id="menuIconFleetCard" class="bi bi-list fs-3"></i>
         </button>
 
-
-        <!-- Logo -->
-
-        <a href="/" class="navbar-brand position-absolute top-50 start-50 translate-middle p-0 m-0">
-
+        <!-- Logo no centro -->
+        <a href="{% url 'home' %}" 
+           class="navbar-brand position-absolute top-50 start-50 translate-middle m-0 p-0">
             <img src="{% static 'imagens/Logo_FleetCard_para_cadastro_de_veículos-removebg-preview.png' %}"
-                alt="FleetCard" class="img-fluid mt-4" style="max-height: 150px; width: auto;">
-
+                 alt="FleetCard"
+                 class="img-fluid"
+                 style="max-height: 58px; width: auto;">
         </a>
 
-
-        <!-- Home -->
-
-        <a href="/" class="btn btn-white ms-auto text-white">
-
-            <i class="bi bi-house-fill me-1 text-white"></i>
-
-            Home
-
+        <!-- Botão Home -->
+        <a href="{% url 'home' %}" 
+           class="btn btn-outline-light btn-sm ms-auto d-flex align-items-center gap-2 px-3">
+            <i class="bi bi-house-fill"></i>
+            <span class="d-none d-sm-inline fw-medium">Home</span>
         </a>
-
     </div>
-
 </nav>
 
 
-<!-- Sidebar -->
-
-<div class="offcanvas offcanvas-start bg-primary" tabindex="-1" id="sidebarFleetCard"
-    aria-labelledby="sidebarFleetCardLabel">
+<!--  SIDEBAR  -->
+<div class="offcanvas offcanvas-start bg-primary text-white" 
+     tabindex="-1" 
+     id="sidebarFleetCard"
+     aria-labelledby="sidebarFleetCardLabel"
+     style="width: 300px;">
 
 
     <!-- Cabeçalho -->
-
-    <div class="offcanvas-header bg-transparent text-white justify-content-start py-2" style="min-height: 85px;">
-
-        <button id="fecharSidebarFleetCard" type="button"
-            class="btn btn-primary text-white fw-normal d-flex align-items-center gap-2" data-bs-dismiss="offcanvas"
-            aria-label="Fechar">
-
-            <span>
-                FECHAR
-            </span>
-
+    <div class="offcanvas-header border-bottom border-white border-25 py-3">
+        <button id="fecharSidebarFleetCard"
+                type="button"
+                class="btn btn-outline-light btn-sm d-flex align-items-center gap-2 px-3"
+                data-bs-dismiss="offcanvas"
+                aria-label="Fechar menu">
+            <span class="fw-medium">FECHAR</span>
             <i class="bi bi-x-lg"></i>
-
         </button>
-
     </div>
 
+    <!-- Corpo da sidebar -->
+    <div class="offcanvas-body p-0 d-flex flex-column">
 
-    <!-- Conteúdo -->
-
-    <div class="offcanvas-body py-5">
-
-        <div class="list-group list-group-flush">
+        <!-- Links principais -->
+        <div class="list-group list-group-flush flex-grow-1 pt-2">
 
             <!-- Home -->
-
-            <a href="{% url 'home' %}" class="list-group-item list-group-item-action py-3">
-
-                <i class="bi bi-house-fill text-primary me-3"></i>
-
-                Home
-
+            <a href="{% url 'home' %}" 
+               class="list-group-item list-group-item-action bg-transparent text-white border-0 py-3 px-4 d-flex align-items-center gap-3">
+                <i class="bi bi-house-fill fs-5"></i>
+                <span class="fw-medium">Home</span>
             </a>
-
 
             <!-- Veículos -->
-
-            <a href="{% url 'pagina_veiculos' %}" class="list-group-item list-group-item-action py-3">
-
-                <i class="bi bi-car-front-fill text-primary me-3"></i>
-
-                Veículos
-
+            <a href="{% url 'pagina_veiculos' %}" 
+               class="list-group-item list-group-item-action bg-transparent text-white border-0 py-3 px-4 d-flex align-items-center gap-3">
+                <i class="bi bi-car-front-fill fs-5"></i>
+                <span class="fw-medium">Veículos</span>
             </a>
-
-
-            <!-- Área administrativa -->
 
             {% if user.is_authenticated and user.is_staff %}
-
             <!-- Cadastrar veículo -->
-
-            <a href="{% url 'admin:index' %}" class="list-group-item list-group-item-action py-3">
-
-                <i class="bi bi-plus-circle-fill text-success me-3"></i>
-
-                Cadastrar veículo
-
+            <a href="{% url 'admin:index' %}" 
+               class="list-group-item list-group-item-action bg-transparent text-white border-0 py-3 px-4 d-flex align-items-center gap-3">
+                <i class="bi bi-plus-circle-fill fs-5 text-success"></i>
+                <span class="fw-medium">Cadastrar veículo</span>
             </a>
-
 
             <!-- Listar veículos -->
-
-            <a href="{% url 'lista_veiculos' %}" class="list-group-item list-group-item-action py-3">
-
-                <i class="bi bi-list-ul text-primary me-3"></i>
-
-                Listar veículos
-
+            <a href="{% url 'lista_veiculos' %}" 
+               class="list-group-item list-group-item-action bg-transparent text-white border-0 py-3 px-4 d-flex align-items-center gap-3">
+                <i class="bi bi-list-ul fs-5"></i>
+                <span class="fw-medium">Listar veículos</span>
             </a>
-
             {% endif %}
-
-
-
-
-
-
-            <!-- Contatos / Sobre / Acessar ou Deslogar -->
-
-            <div class="d-flex justify-content-center align-items-center gap-1 mt-3 flex-nowrap">
-
-                <!-- Contatos -->
-
-                <a href="{% url 'contatos' %}" class="list-group-item list-group-item-action py-3 px-2">
-
-                    <i class="bi bi-telephone-fill text-primary me-2"></i>
-
-                    Contatos
-
-                </a>
-
-
-                <!-- Sobre -->
-
-                <a href="{% url 'sobre' %}" class="list-group-item list-group-item-action py-3 px-2">
-
-                    <i class="bi bi-info-circle-fill text-primary me-2"></i>
-
-                    Sobre
-
-                </a>
-
-
-                
-
-
-                {% if user.is_authenticated %}
-
-                <a href="{% url 'deslogar' %}" class="list-group-item list-group-item-action py-3 px-2">
-
-                    <i class="bi bi-box-arrow-right text-danger me-2"></i>
-
-                    Deslogar
-
-                </a>
-
-                {% else %}
-
-                <a href="{% url 'admin:login' %}" class="list-group-item list-group-item-action py-3 px-2">
-
-                    <i class="bi bi-box-arrow-in-right text-primary me-2"></i>
-
-                    Acessar sistema
-
-                </a>
-
-                {% endif %}
-
-            </div>
-
-
-
         </div>
 
-    </div>
+        <!-- Links de baixo -->
+        <div class="border-top border-white border-opacity-25 mt-auto">
+            <div class="list-group list-group-flush">
 
+                <!-- Contatos -->
+                <a href="{% url 'contatos' %}" 
+                   class="list-group-item list-group-item-action bg-transparent text-white border-0 py-3 px-4 d-flex align-items-center gap-3">
+                    <i class="bi bi-telephone-fill fs-5"></i>
+                    <span class="fw-medium">Contatos</span>
+                </a>
+
+                <!-- Sobre -->
+                <a href="{% url 'sobre' %}" 
+                   class="list-group-item list-group-item-action bg-transparent text-white border-0 py-3 px-4 d-flex align-items-center gap-3">
+                    <i class="bi bi-info-circle-fill fs-5"></i>
+                    <span class="fw-medium">Sobre</span>
+                </a>
+
+                {% if user.is_authenticated %}
+                <!-- Deslogar -->
+                <a href="{% url 'deslogar' %}" 
+                   class="list-group-item list-group-item-action bg-transparent text-white border-0 py-3 px-4 d-flex align-items-center gap-3">
+                    <i class="bi bi-box-arrow-right fs-5 text-danger"></i>
+                    <span class="fw-medium">Deslogar</span>
+                </a>
+                {% else %}
+                <!-- Acessar sistema -->
+                <a href="{% url 'admin:login' %}" 
+                   class="list-group-item list-group-item-action bg-transparent text-white border-0 py-3 px-4 d-flex align-items-center gap-3">
+                    <i class="bi bi-box-arrow-in-right fs-5"></i>
+                    <span class="fw-medium">Acessar sistema</span>
+                </a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
 
     <!-- Rodapé -->
-
-    <div class="text-center bg-primary w-100 p-4">
-
-        <a href="/" class="d-block text-decoration-none">
-
+    <div class="text-center p-4 border-top border-white border-opacity-25">
+        <a href="{% url 'home' %}" class="d-inline-block mb-3 text-decoration-none">
             <img src="{% static 'imagens/Logo_FleetCard_para_cadastro_de_veículos-removebg-preview.png' %}"
-                alt="FleetCard" class="img-fluid d-block mx-auto w-75 w-md-50">
-
+                 alt="FleetCard"
+                 class="img-fluid"
+                 style="max-width: 140px;">
         </a>
-
-        <h5 class="text-primary fw-bold mb-0">
-            FleetCard
-        </h5>
-
-        <p class="text-primary small mb-0">
-            Sistema de cadastro e controle de veículos.
+        <h6 class="text-white fw-bold mb-1">FleetCard</h6>
+        <p class="text-white-50 small mb-0 lh-sm">
+            Sistema de cadastro e controle de veículos
         </p>
-
     </div>
-
-</div>
-
 </div>
